@@ -7,6 +7,18 @@
     android:background="#F3F3F3"
     tools:context=".Profile_Fragment">
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/profile_cons1"
@@ -56,7 +68,7 @@
             android:layout_marginStart="@dimen/_9sdp"
             android:layout_marginTop="@dimen/_25sdp"
             android:fontFamily="@font/nunito_sans_semibold"
-            android:text="Your Name"
+            tools:text="Your Name"
             android:textColor="@color/app_black"
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/txt_profile"
@@ -69,7 +81,7 @@
             android:layout_marginTop="@dimen/_4sdp"
             android:layout_marginBottom="@dimen/_8sdp"
             android:fontFamily="@font/nunito_sans_regular"
-            android:text="You Phone Number"
+            tools:text="You Phone Number"
             android:textColor="@color/normal_black"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -122,7 +134,7 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Personal Details"
+            android:text="@string/personal_details"
             android:textSize="16sp"
             android:textColor="@color/normal_black"
             android:fontFamily="@font/nunito_sans_regular"
@@ -162,7 +174,7 @@
             android:id="@+id/security_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Security"
+            android:text="@string/security"
             android:textSize="16sp"
             android:textColor="@color/normal_black"
             android:fontFamily="@font/nunito_sans_regular"
@@ -203,7 +215,7 @@
             android:id="@+id/bankdetails_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bank Details"
+            android:text="@string/bank_details"
             android:textSize="16sp"
             android:textColor="@color/normal_black"
             android:fontFamily="@font/nunito_sans_regular"
@@ -213,5 +225,113 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/profile_loanhistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/drawable_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_bankdetails">
+
+
+        <ImageView
+            android:id="@+id/loanhistory_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loanhistory_icon"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/loanhistory_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_history"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/loanhistory_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/profile_repaymenthistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/drawable_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_loanhistory">
+
+
+        <ImageView
+            android:id="@+id/repaymenthistory_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loanhistory_icon"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/repaymenthistory_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repayment_history"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/repaymenthistory_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/profile_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:backgroundTint="#E7E7E7"
+        android:text="@string/logout"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:textColor="#F34444"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:background="@drawable/drawable_details"
+        android:paddingVertical="@dimen/_13sdp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_repaymenthistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

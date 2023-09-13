@@ -8,7 +8,7 @@
         <item>@font/zilla_slab_bold</item>
         <item>@font/zilla_slab_bold_italic</item>
         <item>@font/zilla_slab_italic</item>
-        <item>@font/zilla_slab_light</item>
+<!--        <item>@font/zilla_slab_light</item>-->
         <item>@font/zilla_slab_medium</item>
         <item>@font/zilla_slab_medium_italic</item>
         <item>@font/zilla_slab_semibold</item>
