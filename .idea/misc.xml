@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/drawable/drawable_details.xml" value="0.1955" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/font/font.xml" value="0.2791666666666667" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/font/zilla_slab.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_dashboard_.xml" value="0.2359375" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_profile_.xml" value="0.4" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_transation_.xml" value="0.2359375" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/nav_graph.xml" value="0.25" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/menu/menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

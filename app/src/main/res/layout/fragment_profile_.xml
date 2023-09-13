@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".Profile_Fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_cons1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/profile_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/back_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:fontFamily="@font/zilla_slab_bold"
+            android:text="@string/profile"
+            android:textColor="@color/app_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_backbtn"
+            app:layout_constraintStart_toEndOf="@+id/profile_backbtn"
+            app:layout_constraintTop_toTopOf="@+id/profile_backbtn" />
+
+        <ImageView
+            android:id="@+id/profile_threedot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/three_dot"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_profile" />
+
+        <TextView
+            android:id="@+id/profile_yourname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="Your Name"
+            android:textColor="@color/app_black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/txt_profile"
+            app:layout_constraintTop_toBottomOf="@+id/txt_profile" />
+
+        <TextView
+            android:id="@+id/profile_phono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:text="You Phone Number"
+            android:textColor="@color/normal_black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/profile_yourname"
+            app:layout_constraintTop_toBottomOf="@+id/profile_yourname" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_logo"
+        android:backgroundTint="@color/normal_black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_cons1"
+        app:layout_constraintTop_toBottomOf="@+id/profile_cons1"
+        tools:layout_editor_absoluteX="12dp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/profile_personaldetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:paddingVertical="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/drawable_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_cons1">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/personaldetails_icon"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Details"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/profile_security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/drawable_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_personaldetails">
+
+
+        <ImageView
+            android:id="@+id/security_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/security_icon"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/security_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/security_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/profile_bankdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/drawable_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_security">
+
+
+        <ImageView
+            android:id="@+id/bankdetails_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bankdetails_icon"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bankdetails_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Details"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bankdetails_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

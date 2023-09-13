@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/nunito_sans_bold</item>
+        <item>@font/nunito_sans_regular</item>
+        <item>@font/nunito_sans_semibold</item>
+        <item>@font/zilla_slab</item>
+        <item>@font/zilla_slab_bold</item>
+        <item>@font/zilla_slab_bold_italic</item>
+        <item>@font/zilla_slab_italic</item>
+        <item>@font/zilla_slab_light</item>
+        <item>@font/zilla_slab_medium</item>
+        <item>@font/zilla_slab_medium_italic</item>
+        <item>@font/zilla_slab_semibold</item>
+        <item>@font/zilla_slab_semibold_italic</item>
+    </array>
+</resources>
