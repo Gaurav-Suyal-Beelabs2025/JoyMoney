@@ -1,14 +1,290 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F3F3F3"
     tools:context=".Transation_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/transation_cons1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/transation_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/transation_selectcompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Company"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:textSize="24sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/zilla_slab_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/transation_backbtn"
+            app:layout_constraintStart_toEndOf="@+id/transation_backbtn"
+            app:layout_constraintTop_toTopOf="@+id/transation_backbtn" />
+
+        <ImageView
+            android:id="@+id/transation_threedot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/three_dot"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/transation_selectcompany"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/transation_selectcompany" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/transation_cons2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/drawable_details"
+        android:paddingVertical="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@+id/transation_cons1"
+        tools:layout_editor_absoluteX="19dp">
+
+
+        <EditText
+            android:id="@+id/transation_searchcompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:hint="@string/search_company"
+            android:textColor="@color/normal_black"
+            android:textSize="16sp"
+            android:background="@drawable/drawable_details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/transation_searchicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:src="@drawable/search_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/transation_seeall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_all"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:textColor="#0057FF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/transation_cons2"
+        app:layout_constraintTop_toBottomOf="@+id/transation_cons2" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="52dp"
+        android:layout_height="1dp"
+        android:background="#0057FF"
+        app:layout_constraintEnd_toEndOf="@+id/transation_seeall"
+        app:layout_constraintStart_toStartOf="@+id/transation_seeall"
+        app:layout_constraintTop_toBottomOf="@+id/transation_seeall" />
+
+    <TextView
+        android:id="@+id/transation_pvtlim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/abc_private_limited"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:textColor="@color/app_black"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/_17sdp"
+        app:layout_constraintStart_toStartOf="@+id/transation_cons2"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/transation_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your company has allowed you to get a credit
+of Rs. 5000 for 10 days. EMI will be deducted
+from your next salary."
+        android:textSize="16sp"
+        android:textColor="@color/normal_black"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transation_pvtlim" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/transation_con3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_17sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/drawable_details2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transation_note">
+
+        <TextView
+            android:id="@+id/transation_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saurabh Rajput"
+            android:textColor="@color/app_black"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/transation_empcoed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Code"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintStart_toStartOf="@+id/transation_name"
+            app:layout_constraintTop_toBottomOf="@+id/transation_name" />
+
+        <TextView
+            android:id="@+id/transation_1234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234"
+            android:textSize="16sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_62sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/transation_empcoed"
+            app:layout_constraintStart_toEndOf="@+id/transation_empcoed"
+            app:layout_constraintTop_toTopOf="@+id/transation_empcoed" />
+
+        <TextView
+            android:id="@+id/transation_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max Eligibility"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintStart_toStartOf="@+id/transation_empcoed"
+            app:layout_constraintTop_toBottomOf="@+id/transation_empcoed" />
+
+
+        <TextView
+            android:id="@+id/transation_5000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:text="5000 INR"
+            android:textColor="@color/app_black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/transation_max"
+            app:layout_constraintStart_toStartOf="@+id/transation_1234"
+            app:layout_constraintTop_toTopOf="@+id/transation_max" />
+
+        <TextView
+            android:id="@+id/transation_loan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan tenure"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintStart_toStartOf="@+id/transation_max"
+            app:layout_constraintTop_toBottomOf="@+id/transation_max" />
+
+        <TextView
+            android:id="@+id/transation_10day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:text="10Days"
+            android:textColor="@color/app_black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/transation_loan"
+            app:layout_constraintStart_toStartOf="@+id/transation_5000"
+            app:layout_constraintTop_toTopOf="@+id/transation_loan" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <CheckBox
+        android:id="@+id/transation_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transation_con3" />
+
+    <TextView
+        android:id="@+id/transation_checkboxtext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:textSize="14sp"
+        android:textColor="@color/normal_black"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:text="Repayment of this loan will be deducted from \nyour next salary"
+        app:layout_constraintBottom_toBottomOf="@+id/transation_checkbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/transation_checkbox"
+        app:layout_constraintTop_toTopOf="@+id/transation_checkbox" />
+
+
+    <TextView
+        android:id="@+id/home_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/drawable_details"
+        android:backgroundTint="#0AA95F"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:paddingVertical="@dimen/_13sdp"
+        android:text="@string/proceed"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transation_checkboxtext" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

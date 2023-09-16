@@ -15,4 +15,8 @@
     <string name="kyc_pending">KYC Pending</string>
     <string name="aadhaar_verification">Aadhaar Verification</string>
     <string name="resume">Resume</string>
+    <string name="see_all">See All</string>
+    <string name="abc_private_limited">ABC Private Limited</string>
+    <string name="proceed">Proceed</string>
+    <string name="search_company">Search Company</string>
 </resources>
