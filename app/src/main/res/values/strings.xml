@@ -19,4 +19,6 @@
     <string name="abc_private_limited">ABC Private Limited</string>
     <string name="proceed">Proceed</string>
     <string name="search_company">Search Company</string>
+    <string name="persoanl_details">Persoanl Details</string>
+    <string name="confirm">Confirm</string>
 </resources>

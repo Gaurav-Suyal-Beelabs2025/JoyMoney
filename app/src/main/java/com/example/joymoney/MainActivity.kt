@@ -2,6 +2,7 @@ package com.example.joymoney
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -16,5 +17,14 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.nav_botton)
         bottomNavigationView.setupWithNavController(navController)
 
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+//            TransitionManager.beginDelayedTransition(bottomNavigationView, Fade())
+            if (destination.id == R.id.profile_details) {
+                bottomNavigationView.visibility = View.GONE
+            } else {
+                bottomNavigationView.visibility = View.VISIBLE
+            }
+        }
     }
 }

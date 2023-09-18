@@ -15,10 +15,19 @@
         android:id="@+id/profile_Fragment"
         android:name="com.example.joymoney.Profile_Fragment"
         android:label="fragment_profile_"
-        tools:layout="@layout/fragment_profile_" />
+        tools:layout="@layout/fragment_profile_" >
+        <action
+            android:id="@+id/action_profile_Fragment_to_profile_details"
+            app:destination="@id/profile_details" />
+    </fragment>
     <fragment
         android:id="@+id/transation_Fragment"
         android:name="com.example.joymoney.Transation_Fragment"
         android:label="fragment_transation_"
         tools:layout="@layout/fragment_transation_" />
+    <fragment
+        android:id="@+id/profile_details"
+        android:name="com.example.joymoney.Profile_details"
+        android:label="fragment_profile_details"
+        tools:layout="@layout/fragment_profile_details" />
 </navigation>

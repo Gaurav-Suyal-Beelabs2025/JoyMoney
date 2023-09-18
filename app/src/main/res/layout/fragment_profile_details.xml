@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3F3F3"
+    tools:context=".Profile_details">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_cons1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/profile_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/back_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:fontFamily="@font/zilla_slab_bold"
+            android:text="@string/persoanl_details"
+            android:textColor="@color/app_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_backbtn"
+            app:layout_constraintStart_toEndOf="@+id/profile_backbtn"
+            app:layout_constraintTop_toTopOf="@+id/profile_backbtn" />
+
+        <ImageView
+            android:id="@+id/profile_threedot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/three_dot"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_profile" />
+
+        <TextView
+            android:id="@+id/profile_yourname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_73sdp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:textColor="@color/app_black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/profile_backbtn"
+            app:layout_constraintTop_toBottomOf="@+id/txt_profile"
+            tools:text="Saurabh Rajput" />
+
+        <TextView
+            android:id="@+id/profile_phono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/nunito_sans_regular"
+            tools:text="+91 96611 71289"
+            android:textColor="@color/normal_black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/profile_yourname"
+            app:layout_constraintTop_toBottomOf="@+id/profile_yourname" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:backgroundTint="@color/normal_black"
+        android:src="@drawable/image_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_cons1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_cons1" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/prodetails_cons2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:backgroundTint="#EBEBEB"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_55sdp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_cons1">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="@color/app_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_17sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ravi Sharma"
+            android:textColor="@color/normal_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/prodetails_cons3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:backgroundTint="#EBEBEB"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/prodetails_cons2">
+
+
+        <TextView
+            android:id="@+id/prodetails_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB"
+            android:textColor="@color/app_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_17sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/prodetails_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20/06/1998"
+            android:textColor="@color/normal_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintStart_toStartOf="@+id/prodetails_dob"
+            app:layout_constraintTop_toBottomOf="@+id/prodetails_dob" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/prodetails_cons4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:backgroundTint="#EBEBEB"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/prodetails_cons3">
+
+
+        <TextView
+            android:id="@+id/prodetails_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email ID"
+            android:textColor="@color/app_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_17sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/prodetails_emailid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="saurabhkumarmth03@gmail.com"
+            android:textColor="@color/normal_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintStart_toStartOf="@+id/prodetails_email"
+            app:layout_constraintTop_toBottomOf="@+id/prodetails_email" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/prodetails_cons5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:backgroundTint="#EBEBEB"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/prodetails_cons4">
+
+
+        <TextView
+            android:id="@+id/prodetails_pan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAN"
+            android:textColor="@color/app_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_17sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/prodetails_pan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masked PAN"
+            android:textColor="@color/normal_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintStart_toStartOf="@+id/prodetails_pan"
+            app:layout_constraintTop_toBottomOf="@+id/prodetails_pan" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/prodetails_cons6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:backgroundTint="#EBEBEB"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/prodetails_cons5">
+
+
+        <TextView
+            android:id="@+id/prodetails_address1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Communication Address"
+            android:textColor="@color/app_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_17sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/prodetails_adress2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B-154, Noida, Uttar Pradesh"
+            android:textColor="@color/normal_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintStart_toStartOf="@+id/prodetails_address1"
+            app:layout_constraintTop_toBottomOf="@+id/prodetails_address1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/prodetails_cons7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:backgroundTint="#EBEBEB"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/prodetails_cons6">
+
+
+        <TextView
+            android:id="@+id/prodetails_address3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parmanent Address"
+            android:textColor="@color/app_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_17sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/prodetails_adress4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B-154, Noida, Uttar Pradesh"
+            android:textColor="@color/normal_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintStart_toStartOf="@+id/prodetails_address3"
+            app:layout_constraintTop_toBottomOf="@+id/prodetails_address3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/home_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/drawable_details"
+                android:backgroundTint="#0AA95F"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_26sdp"
+                android:paddingVertical="@dimen/_13sdp"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prodetails_cons7" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
