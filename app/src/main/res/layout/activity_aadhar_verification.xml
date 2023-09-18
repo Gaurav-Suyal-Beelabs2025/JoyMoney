@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".AadharVerification">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottomContainer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/frame"/>
+
+    <TextView
+        android:id="@+id/adharverification_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/zilla_slab_bold"
+        android:text="Aadhaar Verification"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@id/back_image"
+        app:layout_constraintTop_toBottomOf="@id/back_image" />
+
+    <ImageView
+        android:id="@+id/vertical_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:background="@drawable/more_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/adharverification_txt"
+        app:layout_constraintStart_toEndOf="@+id/adharverification_txt"
+        app:layout_constraintTop_toTopOf="@id/adharverification_txt" />
+    <TextView
+        android:id="@+id/send_otp_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/adharverification_txt"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/adharverification_txt"
+        android:text="Enter OTP we have sent on your phone \nnumber."/>
+
+    <com.chaos.view.PinView
+        android:id="@+id/pin_view"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:itemBackground="#EBEBEB"
+        app:cursorColor="@color/black"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="@dimen/_40sdp"
+        app:itemRadius="5dp"
+        app:itemSpacing="@dimen/_7sdp"
+        app:itemWidth="@dimen/_40sdp"
+        app:layout_constraintStart_toStartOf="@+id/adharverification_txt"
+        app:layout_constraintTop_toBottomOf="@id/send_otp_txt"
+        app:lineColor="#DDD8D8"
+        app:lineWidth="@dimen/_1sdp" />
+
+    <TextView
+        android:id="@+id/timer_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintTop_toBottomOf="@id/pin_view"
+        android:text="00:30"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/recived_otp_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Havn’t recieved any OTP yet?"
+        android:textSize="14sp"
+        android:fontFamily="@font/nunito"
+        android:textColor="@color/littleblack"
+        app:layout_constraintEnd_toEndOf="@+id/timer_txt"
+        app:layout_constraintStart_toStartOf="@+id/timer_txt"
+        app:layout_constraintTop_toBottomOf="@id/timer_txt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/resend_button"
+        android:layout_width="153sp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_13sdp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:fontFamily="@font/nunito"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:background="@drawable/button_draw"
+        android:paddingVertical="@dimen/_15sdp"
+        android:text="Resend OTP"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0AA95F"
+        app:layout_constraintTop_toBottomOf="@id/recived_otp_txt"
+        app:layout_constraintEnd_toEndOf="@+id/pin_view"
+        app:layout_constraintStart_toStartOf="@+id/pin_view" />
+
+    <TextView
+        android:id="@+id/powered_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered by"
+        android:textSize="12sp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@id/aadhar_logo"
+        app:layout_constraintEnd_toEndOf="@+id/resend_button"
+        app:layout_constraintStart_toStartOf="@+id/resend_button"
+   />
+
+    <ImageView
+        android:id="@+id/aadhar_logo"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintBottom_toTopOf="@id/verifi_button"
+        android:background="@drawable/aadhaar_logo_1"
+        app:layout_constraintEnd_toEndOf="@+id/resend_button"
+        app:layout_constraintStart_toStartOf="@+id/resend_button"
+        />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/verifi_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/button_draw"
+                android:fontFamily="@font/nunito_bold"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="Verify"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/pin_view"
+                app:layout_constraintStart_toStartOf="@+id/pin_view" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:id="@+id/bottomContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+            </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

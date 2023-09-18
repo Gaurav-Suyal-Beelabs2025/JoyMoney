@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".Security">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/security_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingVertical="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+           android:background="@drawable/frame"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/security_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Security"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/zilla_slab_bold"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintTop_toTopOf="@id/image" />
+
+        <ImageView
+            android:id="@+id/vertical_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/more_vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/security_txt"
+          app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/security_txt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login_security_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/security_layout">
+
+        <TextView
+            android:id="@+id/login_security_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Security"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/black"/>
+
+  <TextView
+    android:id="@+id/fingerprint_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Fingerprint"
+    android:textSize="16sp" android:fontFamily="@font/nunito"
+    android:layout_marginTop="@dimen/_10sdp"
+    app:layout_constraintStart_toStartOf="@id/login_security_txt"
+    app:layout_constraintTop_toBottomOf="@id/login_security_txt"/>
+
+        <Switch
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/fingerprint_txt"
+            app:layout_constraintTop_toTopOf="@id/fingerprint_txt"
+            android:id="@+id/switchbutton"
+
+            />
+        <TextView
+            android:id="@+id/mpin_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m-PIN"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@id/login_security_txt"
+            app:layout_constraintTop_toBottomOf="@id/fingerprint_txt"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            app:layout_constraintTop_toBottomOf="@id/switchbutton"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/mpin_txt"
+            app:layout_constraintTop_toTopOf="@id/mpin_txt"
+
+
+            />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/transcition_security_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/login_security_layout">
+        <TextView
+            android:id="@+id/transction_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Security"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/transcition_pin_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction PIN"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/transction_txt"
+            app:layout_constraintTop_toBottomOf="@id/transction_txt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:id="@+id/details_txt1"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/transcition_pin_txt"
+            app:layout_constraintTop_toTopOf="@id/transcition_pin_txt"
+            app:layout_constraintTop_toBottomOf="@id/transcition_pin_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#0057FF"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="#0057FF"
+            app:layout_constraintStart_toStartOf="@id/details_txt1"
+            app:layout_constraintTop_toBottomOf="@id/details_txt1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/transcition_security_layout">
+
+        <TextView
+            android:id="@+id/login_security_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/fingerprint_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whatsapp"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/login_security_txt1"
+            app:layout_constraintTop_toBottomOf="@id/login_security_txt1"/>
+
+        <Switch
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/fingerprint_txt1"
+            app:layout_constraintTop_toTopOf="@id/fingerprint_txt1"
+            android:id="@+id/switchbutton1"
+
+            />
+        <TextView
+            android:id="@+id/mpin_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@id/login_security_txt1"
+            app:layout_constraintTop_toBottomOf="@id/fingerprint_txt1"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            app:layout_constraintTop_toBottomOf="@id/switchbutton1"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/mpin_txt1"
+            app:layout_constraintTop_toTopOf="@id/mpin_txt1"
+
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/button_draw"
+        android:fontFamily="@font/nunito_bold"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="Verify"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="@+id/notification_layout"
+        app:layout_constraintStart_toStartOf="@+id/notification_layout" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
