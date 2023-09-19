@@ -4,10 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/drawable/button_bacground.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/drawable/refresh_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/drawable/selfie_click.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/font/font_family.xml" value="0.2791666666666667" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_aadhar_verification__captcha_.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_allow_permission_.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_home_.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_mobile_number__verification.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_pan_verification_.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_profile_.xml" value="0.2359375" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_splash__screen.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_transation_ragment.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_upload_selfie_.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/menu/menu.xml" value="0.24895833333333334" />
       </map>
     </option>
   </component>

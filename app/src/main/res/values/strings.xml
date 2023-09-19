@@ -7,4 +7,20 @@
     <string name="allow_amp_continue"><![CDATA[Allow & Continue]]></string>
     <string name="enter_mobile_number">Enter Mobile Number</string>
     <string name="mobile_number">Mobile Number</string>
+    <string name="please_make_sure_this_sim_is_present_in_this_ndevice">Please make sure this SIM is present in this \ndevice</string>
+    <string name="allow_whatsapp_notification">Allow Whatsapp notification</string>
+    <string name="enter_your_pan">Enter Your PAN</string>
+    <string name="pan_verification">PAN Verification</string>
+    <string name="i_authorize_joymoney_to_verify_my_pan_details_from_the_authority">I authorize Joymoney to verify my PAN details from the authority</string>
+    <string name="i_authorize_joymoney_to_check_my_credit_score_from_the_credit_buerue">I authorize Joymoney to check my credit score from the credit buerue</string>
+    <string name="powered_by">Powered by</string>
+    <string name="enter_aadhar_number">Enter Aadhar Number</string>
+    <string name="aadhaar_verification">Aadhaar Verification</string>
+    <string name="same_as_linked_to_my_aadhaar">Same as linked to my Aadhaar</string>
+    <string name="we_don_t_save_your_aadhaar_number">We don’t save your Aadhaar number.</string>
+    <string name="enter_captcha">Enter Captcha</string>
+    <string name="i_authorize_joymoney_to_verify_and_fetch_my_aadhaar_details_from_uidai">I authorize Joymoney to verify and fetch my aadhaar details from UIDAI</string>
+    <string name="submit">Submit</string>
+    <string name="upload_selfie">Upload Selfie</string>
+    <string name="we_would_like_to_see_you">We would like to see you!</string>
 </resources>

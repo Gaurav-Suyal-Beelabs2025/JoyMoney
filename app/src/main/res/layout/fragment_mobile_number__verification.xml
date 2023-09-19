@@ -41,11 +41,15 @@
             android:id="@+id/edit_editmb_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/enter_mobile_number"
+            android:hint="@string/enter_mobile_number"
             android:textColor="#909090"
+            android:textColorHint="#909090"
             android:textSize="16sp"
             android:fontFamily="@font/nunito_sans_regular"
             android:textAllCaps="false"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="10"
             android:paddingStart="@dimen/_14sdp"
             android:paddingVertical="@dimen/_12sdp"
             android:layout_marginTop="@dimen/_12sdp"
@@ -56,10 +60,11 @@
 
 
         <TextView
+            android:id="@+id/txt_please_make"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="Please make sure this SIM is present in this \ndevice"
+            android:text="@string/please_make_sure_this_sim_is_present_in_this_ndevice"
             android:textSize="16sp"
             android:textColor="#686868"
             android:layout_marginTop="@dimen/_10sdp"
@@ -69,8 +74,46 @@
 
 
 
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="@dimen/_73sdp"
+        app:layout_constraintStart_toStartOf="@id/edit_editmb_number"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+       <TextView
+           android:id="@+id/txt_allow_whatsapp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/allow_whatsapp_notification"
+           android:textSize="16sp"
+           android:textAllCaps="false"
+           android:textColor="#323232"
+           android:layout_marginStart="@dimen/_8sdp"
+           android:fontFamily="@font/nunito_sans_regular"
+           app:layout_constraintTop_toTopOf="@id/checkbox"
+           app:layout_constraintStart_toEndOf="@id/checkbox"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bacground"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:text="@string/allow_amp_continue"
+            android:fontFamily="@font/nunito_sans_bold"
+            app:layout_constraintTop_toBottomOf="@id/txt_allow_whatsapp"/>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_Fragment">
+
+
+    <fragment
+        android:id="@+id/home_Fragment"
+        android:name="com.example.joymoney.Home_Fragment"
+        android:label="fragment_home_"
+        tools:layout="@layout/fragment_home_" />
+    <fragment
+        android:id="@+id/transation_fragment"
+        android:name="com.example.joymoney.Transation_ragment"
+        android:label="fragment_transation_ragment"
+        tools:layout="@layout/fragment_transation_ragment" />
+    <fragment
+        android:id="@+id/profile_Fragment"
+        android:name="com.example.joymoney.Profile_Fragment"
+        android:label="fragment_profile_"
+        tools:layout="@layout/fragment_profile_" />
+    <fragment
+        android:id="@+id/uploadSelfie_Fragment"
+        android:name="com.example.joymoney.UploadSelfie_Fragment"
+        android:label="fragment_upload_selfie_"
+        tools:layout="@layout/fragment_upload_selfie_" />
+</navigation>
