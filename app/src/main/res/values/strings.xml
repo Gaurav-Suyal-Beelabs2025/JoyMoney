@@ -21,4 +21,13 @@
     <string name="search_company">Search Company</string>
     <string name="persoanl_details">Persoanl Details</string>
     <string name="confirm">Confirm</string>
+    <string name="login_security">Login Security</string>
+    <string name="transaction_security">Transaction Security</string>
+    <string name="transaction_pin">Transaction PIN</string>
+    <string name="notification">Notification</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="verify">Verify</string>
+    <string name="branch">Branch</string>
+    <string name="ifsc">IFSC</string>
+    <string name="email">Email</string>
 </resources>

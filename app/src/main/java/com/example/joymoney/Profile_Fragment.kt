@@ -23,6 +23,18 @@ class Profile_Fragment : Fragment() {
          it.findNavController().navigate(R.id.action_profile_Fragment_to_profile_details)
      }
 
+        val security = view.findViewById<ConstraintLayout>(R.id.profile_security)
+        security.setOnClickListener {
+            it.findNavController().navigate(R.id.action_profile_Fragment_to_security_fragment)
+
+        }
+
+        val BankDetails = view.findViewById<ConstraintLayout>(R.id.profile_bankdetails)
+        BankDetails.setOnClickListener {
+            it.findNavController().navigate(R.id.action_profile_Fragment_to_bank_details)
+
+        }
+
         return view
     }
 

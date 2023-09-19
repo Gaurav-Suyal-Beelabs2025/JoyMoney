@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Security_fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/security_cons1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/security_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/security_selectcompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/security"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:textSize="24sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/zilla_slab_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/security_backbtn"
+            app:layout_constraintStart_toEndOf="@+id/security_backbtn"
+            app:layout_constraintTop_toTopOf="@+id/security_backbtn" />
+
+        <ImageView
+            android:id="@+id/security_threedot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/three_dot"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/security_selectcompany"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/security_selectcompany" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/security_cons2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/drawable_details"
+        app:layout_constraintTop_toBottomOf="@+id/security_cons1">
+
+
+        <TextView
+            android:id="@+id/security_logintxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_security"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="20sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/zilla_slab_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/security_fingerprint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fingerprint"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/security_logintxt"
+            app:layout_constraintTop_toBottomOf="@+id/security_logintxt" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/security_fingerprint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/security_fingerprint" />
+
+
+        <TextView
+            android:id="@+id/security_m_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m-PIN"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/security_fingerprint"
+            app:layout_constraintTop_toBottomOf="@+id/security_fingerprint" />
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/security_m_pin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/security_m_pin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/security_cons3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/drawable_details"
+        app:layout_constraintTop_toBottomOf="@+id/security_cons2">
+
+
+        <TextView
+            android:id="@+id/security_transactionSecuriy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transaction_security"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="20sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/zilla_slab_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/security_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transaction_pin"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/security_transactionSecuriy"
+            app:layout_constraintTop_toBottomOf="@+id/security_transactionSecuriy" />
+
+        <TextView
+            android:id="@+id/security_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:textColor="#0057FF"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:layout_marginEnd="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/security_transaction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/security_transaction" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="#0057FF"
+            app:layout_constraintEnd_toEndOf="@+id/security_change"
+            app:layout_constraintStart_toStartOf="@+id/security_change"
+            app:layout_constraintTop_toBottomOf="@+id/security_change" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/security_cons4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/drawable_details"
+        app:layout_constraintTop_toBottomOf="@+id/security_cons3">
+
+
+        <TextView
+            android:id="@+id/security_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notification"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="20sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/zilla_slab_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/security_whatsaap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/whatsapp"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/security_notice"
+            app:layout_constraintTop_toBottomOf="@+id/security_notice" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/security_whatsaap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/security_whatsaap" />
+
+
+        <TextView
+            android:id="@+id/security_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/security_whatsaap"
+            app:layout_constraintTop_toBottomOf="@+id/security_whatsaap" />
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/security_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/security_email" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/home_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/drawable_details"
+        android:backgroundTint="#0AA95F"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_13sdp"
+        android:text="@string/verify"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Bank_details">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bankdetails_cons1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/security_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/security_selectcompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank_details"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:textSize="24sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/zilla_slab_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/security_backbtn"
+            app:layout_constraintStart_toEndOf="@+id/security_backbtn"
+            app:layout_constraintTop_toTopOf="@+id/security_backbtn" />
+
+        <ImageView
+            android:id="@+id/security_threedot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/three_dot"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/security_selectcompany"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/security_selectcompany" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/bank_details_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This bank account will be used to transfer the amount  "
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:textSize="16sp"
+        android:textColor="#626161"
+        android:fontFamily="@font/nunito_sans_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankdetails_cons1" />
+
+    <TextView
+        android:id="@+id/bankdetails_accountno."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bank account number"
+        android:textSize="16sp"
+        android:textColor="@color/normal_black"
+        android:paddingStart="@dimen/_15sdp"
+        android:backgroundTint="#EBEBEB"
+        android:paddingVertical="@dimen/_14sdp"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_details_txt" />
+
+
+    <TextView
+        android:id="@+id/bankdetails_ifsc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ifsc"
+        android:textSize="16sp"
+        android:textColor="@color/normal_black"
+        android:paddingStart="@dimen/_15sdp"
+        android:backgroundTint="#EBEBEB"
+        android:paddingVertical="@dimen/_14sdp"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankdetails_accountno." />
+
+
+
+    <TextView
+        android:id="@+id/bankdetails_branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/branch"
+        android:textSize="16sp"
+        android:textColor="@color/normal_black"
+        android:paddingStart="@dimen/_15sdp"
+        android:backgroundTint="#EBEBEB"
+        android:paddingVertical="@dimen/_14sdp"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankdetails_ifsc" />
+
+
+    <TextView
+        android:id="@+id/bankdetails_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/drawable_details"
+        android:backgroundTint="#0AA95F"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_13sdp"
+        android:text="@string/verify"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,6 +19,12 @@
         <action
             android:id="@+id/action_profile_Fragment_to_profile_details"
             app:destination="@id/profile_details" />
+        <action
+            android:id="@+id/action_profile_Fragment_to_security_fragment"
+            app:destination="@id/security_fragment" />
+        <action
+            android:id="@+id/action_profile_Fragment_to_bank_details"
+            app:destination="@id/bank_details" />
     </fragment>
     <fragment
         android:id="@+id/transation_Fragment"
@@ -30,4 +36,14 @@
         android:name="com.example.joymoney.Profile_details"
         android:label="fragment_profile_details"
         tools:layout="@layout/fragment_profile_details" />
+    <fragment
+        android:id="@+id/security_fragment"
+        android:name="com.example.joymoney.Security_fragment"
+        android:label="fragment_security_fragment"
+        tools:layout="@layout/fragment_security_fragment" />
+    <fragment
+        android:id="@+id/bank_details"
+        android:name="com.example.joymoney.Bank_details"
+        android:label="fragment_bank_details"
+        tools:layout="@layout/fragment_bank_details" />
 </navigation>
