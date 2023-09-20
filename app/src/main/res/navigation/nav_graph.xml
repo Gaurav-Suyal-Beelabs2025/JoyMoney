@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_profile_Fragment_to_bank_details"
             app:destination="@id/bank_details" />
+        <action
+            android:id="@+id/action_profile_Fragment_to_fragment_loan_details"
+            app:destination="@id/fragment_loan_details" />
     </fragment>
     <fragment
         android:id="@+id/transation_Fragment"
@@ -46,4 +49,9 @@
         android:name="com.example.joymoney.Bank_details"
         android:label="fragment_bank_details"
         tools:layout="@layout/fragment_bank_details" />
+    <fragment
+        android:id="@+id/fragment_loan_details"
+        android:name="com.example.joymoney.Fragment_loan_details"
+        android:label="fragment_loan_details"
+        tools:layout="@layout/fragment_loan_details" />
 </navigation>

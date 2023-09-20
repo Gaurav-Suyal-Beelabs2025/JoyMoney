@@ -30,4 +30,21 @@
     <string name="branch">Branch</string>
     <string name="ifsc">IFSC</string>
     <string name="email">Email</string>
+    <string name="loan_details">Loan Details</string>
+    <string name="bank_account">Bank Account</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="bank_account_no">Bank Account No.</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="bank_branch">Bank Branch</string>
+    <string name="e_nach_details">e-Nach Details</string>
+    <string name="loandetails_enach">loandetails_enach</string>
+    <string name="emi_details">EMI Details</string>
+    <string name="status">Status</string>
+    <string name="request_for_cancellation">Request for Cancellation</string>
+    <string name="employee_loan">Employee Loan</string>
+    <string name="company">Company</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="repayment_date">Repayment Date</string>
+    <string name="repayment_amount">Repayment Amount</string>
+    <string name="details">Details</string>
 </resources>

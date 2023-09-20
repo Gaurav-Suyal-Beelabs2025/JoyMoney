@@ -34,6 +34,11 @@ class Profile_Fragment : Fragment() {
             it.findNavController().navigate(R.id.action_profile_Fragment_to_bank_details)
 
         }
+        val Fragment_loan_details = view.findViewById<ConstraintLayout>(R.id.profile_loanhistory)
+        Fragment_loan_details.setOnClickListener {
+            it.findNavController().navigate(R.id.action_profile_Fragment_to_fragment_loan_details)
+
+        }
 
         return view
     }
