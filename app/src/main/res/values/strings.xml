@@ -47,4 +47,7 @@
     <string name="repayment_date">Repayment Date</string>
     <string name="repayment_amount">Repayment Amount</string>
     <string name="details">Details</string>
+    <string name="credit_limit">Credit Limit</string>
+    <string name="disbursed_amount">Disbursed Amount</string>
+    <string name="next_repayment">Next Repayment</string>
 </resources>
