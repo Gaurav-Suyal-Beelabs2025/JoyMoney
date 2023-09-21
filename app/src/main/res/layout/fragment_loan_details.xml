@@ -34,11 +34,12 @@
             android:id="@+id/security_backbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/back_btn"
+            android:background="@drawable/back_btn"
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginStart="@dimen/_15sdp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
 
         <TextView
             android:id="@+id/security_selectcompany"
@@ -401,7 +402,7 @@
             app:layout_constraintTop_toBottomOf="@+id/loandetails_loanamount" />
 
         <TextView
-            android:id="@+id/loandetails_date"
+            android:id="@+id/loandetails_date1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="10/05/2023"
@@ -434,7 +435,7 @@
             android:textColor="@color/app_black"
             android:fontFamily="@font/nunito_sans_regular"
             app:layout_constraintBottom_toBottomOf="@+id/loandetails_amountt"
-            app:layout_constraintStart_toStartOf="@+id/loandetails_date"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_date1"
             app:layout_constraintTop_toTopOf="@+id/loandetails_amountt" />
 
 
@@ -460,12 +461,12 @@
             android:textColor="#F34444"
             android:fontFamily="@font/nunito_sans_regular"
             app:layout_constraintBottom_toBottomOf="@+id/loandetails_statusc"
-            app:layout_constraintStart_toStartOf="@+id/loandetails_date"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_date1"
             app:layout_constraintTop_toTopOf="@+id/loandetails_statusc" />
 
 
         <TextView
-            android:id="@+id/security_change"
+            android:id="@+id/loan_detailss"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nunito_sans_semibold"
@@ -480,9 +481,9 @@
             android:layout_width="48dp"
             android:layout_height="1dp"
             android:background="#0057FF"
-            app:layout_constraintEnd_toEndOf="@+id/security_change"
-            app:layout_constraintStart_toStartOf="@+id/security_change"
-            app:layout_constraintTop_toBottomOf="@+id/security_change" />
+            app:layout_constraintEnd_toEndOf="@+id/loan_detailss"
+            app:layout_constraintStart_toStartOf="@+id/loan_detailss"
+            app:layout_constraintTop_toBottomOf="@+id/loan_detailss" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

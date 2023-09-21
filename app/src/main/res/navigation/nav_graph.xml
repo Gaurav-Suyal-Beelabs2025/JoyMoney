@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_profile_Fragment_to_fragment_loan_details"
             app:destination="@id/fragment_loan_details" />
+        <action
+            android:id="@+id/action_profile_Fragment_to_repayment_history"
+            app:destination="@id/repayment_history" />
     </fragment>
     <fragment
         android:id="@+id/transation_Fragment"
@@ -53,5 +56,19 @@
         android:id="@+id/fragment_loan_details"
         android:name="com.example.joymoney.Fragment_loan_details"
         android:label="fragment_loan_details"
-        tools:layout="@layout/fragment_loan_details" />
+        tools:layout="@layout/fragment_loan_details" >
+        <action
+            android:id="@+id/action_fragment_loan_details_to_employee_loan_details"
+            app:destination="@id/employee_loan_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/repayment_history"
+        android:name="com.example.joymoney.Repayment_history"
+        android:label="fragment_repayment_history"
+        tools:layout="@layout/fragment_repayment_history" />
+    <fragment
+        android:id="@+id/employee_loan_details"
+        android:name="com.example.joymoney.Employee_loan_details"
+        android:label="fragment_employee_loan_details"
+        tools:layout="@layout/fragment_employee_loan_details" />
 </navigation>

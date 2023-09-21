@@ -50,4 +50,15 @@
     <string name="credit_limit">Credit Limit</string>
     <string name="disbursed_amount">Disbursed Amount</string>
     <string name="next_repayment">Next Repayment</string>
+    <string name="loan_id">Loan ID</string>
+    <string name="disbursement_date">Disbursement Date</string>
+    <string name="loan_tenure">Loan Tenure</string>
+    <string name="overdue">Overdue</string>
+    <string name="emi_amount">EMI Amount</string>
+    <string name="emi_schdule">EMI Schdule</string>
+    <string name="total_repayment">Total Repayment</string>
+    <string name="next_repayment_date">Next Repayment Date</string>
+    <string name="repayment_mode">Repayment Mode</string>
+    <string name="pay_emi">Pay EMI</string>
+    <string name="pay">Pay</string>
 </resources>

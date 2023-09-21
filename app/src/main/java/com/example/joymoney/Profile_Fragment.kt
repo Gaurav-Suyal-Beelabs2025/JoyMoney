@@ -40,6 +40,13 @@ class Profile_Fragment : Fragment() {
 
         }
 
+
+        val Repayment_history = view.findViewById<ConstraintLayout>(R.id.profile_repaymenthistory)
+        Repayment_history.setOnClickListener {
+            it.findNavController().navigate(R.id.action_profile_Fragment_to_repayment_history)
+
+        }
+
         return view
     }
 
