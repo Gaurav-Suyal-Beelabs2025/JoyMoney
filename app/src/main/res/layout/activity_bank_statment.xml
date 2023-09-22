@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/liitlegray"
+    tools:context=".BankStatement">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bank_statement_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingVertical="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/frame"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/security_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/bank_statement"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/zilla_slab_bold"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintTop_toTopOf="@id/image" />
+
+        <ImageView
+            android:id="@+id/vertical_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/more_vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/security_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/security_txt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<TextView
+    android:id="@+id/share_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/share_your_bank_statement"
+    android:textSize="16sp"
+    android:layout_marginTop="@dimen/_18sdp"
+    android:fontFamily="@font/nunito"
+    android:layout_marginStart="@dimen/_15sdp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/bank_statement_layout"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bank_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dot_line_draw"
+        android:paddingVertical="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@id/share_txt"
+        app:layout_constraintTop_toBottomOf="@id/share_txt">
+        <ImageView
+            android:id="@+id/imagesave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/up_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/file_upload_black_24dp_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           />
+
+        <TextView
+            android:id="@+id/uplaod_front1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Statement"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="@+id/up_image"
+            app:layout_constraintStart_toStartOf="@+id/up_image"
+            app:layout_constraintTop_toBottomOf="@id/up_image" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/add_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_more"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/bank_layout"
+        app:layout_constraintEnd_toEndOf="@id/bank_layout"
+        android:textColor="@color/blue"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="1dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/add_txt"
+        app:layout_constraintStart_toStartOf="@id/add_txt"
+        app:layout_constraintTop_toBottomOf="@id/add_txt" />
+
+    <TextView
+        android:id="@+id/login_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_login_to_net_banking"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="@id/login_txt"
+        app:layout_constraintEnd_toStartOf="@id/login_txt"
+        app:layout_constraintStart_toStartOf="@+id/bank_layout"
+        app:layout_constraintTop_toBottomOf="@id/login_txt"
+        app:layout_constraintTop_toTopOf="@id/login_txt" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:layout_marginEnd="@dimen/_18sdp"
+        app:layout_constraintStart_toEndOf="@id/login_txt"
+        app:layout_constraintBottom_toBottomOf="@id/login_txt"
+        app:layout_constraintEnd_toEndOf="@+id/bank_layout"
+        app:layout_constraintTop_toBottomOf="@id/login_txt"
+        app:layout_constraintTop_toTopOf="@id/login_txt" />
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@id/login_button"
+       app:layout_constraintBottom_toTopOf="@id/login_button"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/checkbox1"
+        app:layout_constraintTop_toTopOf="@id/checkbox1"
+        android:fontFamily="@font/nunito"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/checkbox1"
+        android:text="@string/login_to_the_scecure_net_bankinmg_portal_to_n_share_your_statement"/>
+
+
+    <TextView
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:textAlignment="center"
+        android:background="@drawable/button_draw"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/log_in"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="@dimen/_10sdp"
+       app:layout_constraintBottom_toTopOf="@id/confirm_button"
+        android:textAllCaps="false"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/_50sdp"
+        />
+
+    <TextView
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:textAlignment="center"
+        android:background="@drawable/button_draw"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/confirm"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAllCaps="false"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/_50sdp"
+      />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

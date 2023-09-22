@@ -13,4 +13,41 @@
     <string name="other">Other</string>
     <string name="allow_amp_continue"><![CDATA[Allow & Continue]]></string>
     <string name="gst_no">GST No.</string>
+    <string name="aadhaar_verification">Aadhaar Verification</string>
+    <string name="enter_otp_we_have_sent_on_your_phone_nnumber">Enter OTP we have sent on your phone \nnumber.</string>
+    <string name="_00_30">00:30</string>
+    <string name="havn_t_recieved_any_otp_yet">Havn’t recieved any OTP yet?</string>
+    <string name="verify">Verify</string>
+    <string name="business_details">Business Details</string>
+    <string name="skip">Skip</string>
+    <string name="security">Security</string>
+    <string name="notification">Notification</string>
+    <string name="login_security">Login Security</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="m_pin">m-PIN</string>
+    <string name="transaction_security">Transaction Security</string>
+    <string name="transaction_pin">Transaction PIN</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="email">Email</string>
+    <string name="change">Change</string>
+    <string name="is_your_aadhaar_linked_to_your_mobile">Is your Aadhaar linked to your mobile?</string>
+    <string name="upload_front">Upload Front</string>
+    <string name="upload_back">Upload Back</string>
+    <string name="submit">Submit</string>
+    <string name="bank_statement">Bank Statement</string>
+    <string name="add_more">+ Add More</string>
+    <string name="share_your_bank_statement">Share your bank statement</string>
+    <string name="or_login_to_net_banking">Or login to net banking</string>
+    <string name="login_to_the_scecure_net_bankinmg_portal_to_n_share_your_statement">Login to the scecure net bankinmg portal to\n share your statement</string>
+    <string name="log_in">Log In</string>
+    <string name="confirm">Confirm</string>
+    <string name="joy_money">Joy Money</string>
+    <string name="proceed">Proceed</string>
+
+    <string-array name="programming_languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Python</item>
+        <item>CPP</item>
+    </string-array>
 </resources>

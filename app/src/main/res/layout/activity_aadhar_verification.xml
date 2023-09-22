@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F3F3F3"
+    android:background="@color/liitlegray"
     tools:context=".AadharVerification">
 
     <androidx.core.widget.NestedScrollView
@@ -39,21 +39,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_8sdp"
         android:fontFamily="@font/zilla_slab_bold"
-        android:text="Aadhaar Verification"
+        android:text="@string/aadhaar_verification"
         android:textColor="@color/black"
         android:textSize="32sp"
         app:layout_constraintStart_toStartOf="@id/back_image"
         app:layout_constraintTop_toBottomOf="@id/back_image" />
 
-    <ImageView
-        android:id="@+id/vertical_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_15sdp"
-        android:background="@drawable/more_vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/adharverification_txt"
-        app:layout_constraintStart_toEndOf="@+id/adharverification_txt"
-        app:layout_constraintTop_toTopOf="@id/adharverification_txt" />
+            <ImageView
+                android:id="@+id/vertical_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/back_image"
+                app:layout_constraintEnd_toEndOf="@+id/pin_view"
+                app:layout_constraintTop_toTopOf="@id/back_image" />
     <TextView
         android:id="@+id/send_otp_txt"
         android:layout_width="wrap_content"
@@ -63,7 +62,7 @@
         app:layout_constraintStart_toStartOf="@id/adharverification_txt"
         android:layout_marginTop="@dimen/_5sdp"
         app:layout_constraintTop_toBottomOf="@id/adharverification_txt"
-        android:text="Enter OTP we have sent on your phone \nnumber."/>
+        android:text="@string/enter_otp_we_have_sent_on_your_phone_nnumber"/>
 
     <com.chaos.view.PinView
         android:id="@+id/pin_view"
@@ -79,7 +78,7 @@
         app:hideLineWhenFilled="true"
         app:itemCount="6"
         app:itemHeight="@dimen/_40sdp"
-        app:itemRadius="5dp"
+        app:itemRadius="12dp"
         app:itemSpacing="@dimen/_7sdp"
         app:itemWidth="@dimen/_40sdp"
         app:layout_constraintStart_toStartOf="@+id/adharverification_txt"
@@ -94,7 +93,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="@dimen/_30sdp"
         app:layout_constraintTop_toBottomOf="@id/pin_view"
-        android:text="00:30"
+        android:text="@string/_00_30"
         android:fontFamily="@font/nunito_bold"
         android:textColor="@color/blue"
         android:textSize="20sp"
@@ -108,15 +107,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
-        android:text="Havn’t recieved any OTP yet?"
+        android:text="@string/havn_t_recieved_any_otp_yet"
         android:textSize="14sp"
         android:fontFamily="@font/nunito"
-        android:textColor="@color/littleblack"
         app:layout_constraintEnd_toEndOf="@+id/timer_txt"
         app:layout_constraintStart_toStartOf="@+id/timer_txt"
         app:layout_constraintTop_toBottomOf="@id/timer_txt" />
 
-    <androidx.appcompat.widget.AppCompatButton
+
+        <TextView
         android:id="@+id/resend_button"
         android:layout_width="153sp"
         android:layout_height="wrap_content"
@@ -124,14 +123,14 @@
         android:layout_marginBottom="12dp"
         android:gravity="center"
         android:fontFamily="@font/nunito"
-        android:backgroundTint="#FFFFFF"
-        android:layout_marginTop="@dimen/_19sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="@dimen/_18sdp"
         android:background="@drawable/button_draw"
         android:paddingVertical="@dimen/_15sdp"
         android:text="Resend OTP"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="#0AA95F"
+        android:textColor="@color/green"
         app:layout_constraintTop_toBottomOf="@id/recived_otp_txt"
         app:layout_constraintEnd_toEndOf="@+id/pin_view"
         app:layout_constraintStart_toStartOf="@+id/pin_view" />
@@ -162,7 +161,7 @@
         app:layout_constraintStart_toStartOf="@+id/resend_button"
         />
 
-            <androidx.appcompat.widget.AppCompatButton
+            <TextView
                 android:id="@+id/verifi_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -171,7 +170,7 @@
                 android:background="@drawable/button_draw"
                 android:fontFamily="@font/nunito_bold"
                 android:paddingVertical="@dimen/_10sdp"
-                android:text="Verify"
+                android:text="@string/verify"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
@@ -189,7 +188,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
                 android:orientation="horizontal"
                 android:gravity="end">
 

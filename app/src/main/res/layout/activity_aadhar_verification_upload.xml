@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".AadharVerificationUpload">
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/frame"/>
+
+    <TextView
+        android:id="@+id/adharverification_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/zilla_slab_bold"
+        android:text="Aadhaar Verification"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@id/back_image"
+        app:layout_constraintTop_toBottomOf="@id/back_image" />
+
+    <ImageView
+        android:id="@+id/vertical_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="@id/back_image"
+        android:background="@drawable/more_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/back_image"
+       />
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@id/adharverification_txt"
+        app:layout_constraintTop_toBottomOf="@id/adharverification_txt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/checkbox"
+        android:fontFamily="@font/nunito"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="@id/checkbox"
+        app:layout_constraintStart_toEndOf="@id/checkbox"
+        app:layout_constraintTop_toBottomOf="@id/checkbox"
+        android:text="@string/is_your_aadhaar_linked_to_your_mobile"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/front_layout"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dot_line_draw"
+        android:paddingVertical="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@id/checkbox"
+        app:layout_constraintTop_toBottomOf="@id/checkbox">
+<ImageView
+    android:id="@+id/imagesave"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+   app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+  <ImageView
+    android:id="@+id/up_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:background="@drawable/file_upload_black_24dp_1"/>
+
+        <TextView
+            android:id="@+id/uplaod_front1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_front"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="@+id/up_image"
+            app:layout_constraintStart_toStartOf="@+id/up_image"
+            app:layout_constraintTop_toBottomOf="@id/up_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/back_layout"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dot_line_draw"
+        android:paddingVertical="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintStart_toEndOf="@id/front_layout"
+      android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/checkbox">
+        <ImageView
+            android:id="@+id/image_save1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/up_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/file_upload_black_24dp_1"/>
+
+        <TextView
+            android:id="@+id/upload_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_back"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="@+id/up_image1"
+            app:layout_constraintStart_toStartOf="@+id/up_image1"
+            app:layout_constraintTop_toBottomOf="@id/up_image1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/photograph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textColor="@color/blue"
+       android:fontFamily="@font/nunito"
+        app:layout_constraintTop_toBottomOf="@id/front_layout"
+        app:layout_constraintStart_toStartOf="@id/front_layout"
+        android:text="We don’t save your Aadhaar copies in our database.\nYour Aadhaar details will be masked &amp; photograph \nwil be used for verification purpose."/>
+
+
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@id/checkbox"
+        app:layout_constraintBottom_toTopOf="@id/submit_button"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/checkbox1"
+        app:layout_constraintTop_toTopOf="@id/checkbox1"
+        android:fontFamily="@font/nunito"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/checkbox1"
+        android:text="I authorize Joymoney to verify and fetch \nmy aadhaar details from UIDAI"/>
+
+    <TextView
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/button_draw"
+        android:fontFamily="@font/nunito_bold"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/submit"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/checkbox1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/liitlegray"
+    tools:context=".BankStatementCredit">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/credit_layout"
+        android:layout_width="@dimen/_165sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:background="@drawable/credit_draw"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/money_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/money_image"/>
+
+        <TextView
+            android:id="@+id/joy_money_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/joy_money"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/money_image"
+            app:layout_constraintStart_toEndOf="@id/money_image"
+            app:layout_constraintTop_toTopOf="@+id/money_image" />
+<TextView
+    android:id="@+id/date_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Date"
+    android:textSize="10sp"
+    app:layout_constraintStart_toStartOf="@id/money_image"
+    android:layout_marginTop="@dimen/_25sdp"
+    app:layout_constraintTop_toBottomOf="@id/joy_money_txt"/>
+        <TextView
+            android:id="@+id/date_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07/06/2023"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/money_image"
+            app:layout_constraintTop_toBottomOf="@id/date_txt"/>
+        <TextView
+            android:id="@+id/available_credit_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Credit"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/money_image"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintTop_toBottomOf="@id/date_txt1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000 INR"
+            android:textSize="32sp"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/blue"
+            app:layout_constraintStart_toStartOf="@id/available_credit_txt"
+            app:layout_constraintTop_toBottomOf="@id/available_credit_txt"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/image_curve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/credit_layout"
+        app:layout_constraintTop_toTopOf="@id/credit_layout"
+        android:src="@drawable/curev_image"
+        app:layout_constraintStart_toEndOf="@id/credit_layout"
+        android:background="@drawable/image_draw"
+        />
+<TextView
+    android:id="@+id/money_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="How do you want your money?"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:fontFamily="@font/nunitobold"
+    android:layout_marginTop="@dimen/_18sdp"
+    app:layout_constraintStart_toStartOf="@id/credit_layout"
+    app:layout_constraintTop_toBottomOf="@id/credit_layout"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radio_button"
+       android:backgroundTint="@color/white"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/money_txt"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/nunito"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Transfer to bank account"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter Amount"
+    android:textSize="16sp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingVertical="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_15sdp"
+    android:background="@drawable/radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Activate JoyUPI"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Activate Joy Card"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Buy a Phone"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:textAlignment="center"
+        android:background="@drawable/button_draw"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/proceed"
+        android:textAllCaps="false"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/_70sdp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

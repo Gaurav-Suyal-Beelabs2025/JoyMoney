@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -17,6 +16,11 @@ class MainActivity : AppCompatActivity() {
         val button=findViewById<Button>(R.id.next)
         val button1=findViewById<Button>(R.id.next1)
         val aadhar=findViewById<Button>(R.id.adhar)
+        val uploadadhar=findViewById<Button>(R.id.upload_Adhar_button)
+        val bankstatment=findViewById<Button>(R.id.bank_statement_button)
+
+        val credit=findViewById<Button>(R.id.credit_money_button)
+
 
         val spash=findViewById<Button>(R.id.splash_button)
 
@@ -26,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         button.setOnClickListener {
-            val intent = Intent(this, BussnessDetails::class.java)
+            val intent = Intent(this, BusinessDetails::class.java)
             startActivity(intent)
         }
 
@@ -46,6 +50,20 @@ class MainActivity : AppCompatActivity() {
 
         spash.setOnClickListener {
             val intent = Intent(this, SplashScreen::class.java)
+            startActivity(intent)
+        }
+        uploadadhar.setOnClickListener {
+            val intent = Intent(this, AadharVerificationUpload::class.java)
+            startActivity(intent)
+        }
+
+        bankstatment.setOnClickListener {
+            val intent = Intent(this, BankStatement::class.java)
+            startActivity(intent)
+        }
+
+       credit.setOnClickListener {
+            val intent = Intent(this, BankStatementCredit::class.java)
             startActivity(intent)
         }
     }

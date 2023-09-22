@@ -13,6 +13,41 @@
         android:theme="@style/Theme.JoyMoney"
         tools:targetApi="31">
         <activity
+            android:name=".BankStatementCredit"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BankStatement"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BussnessDetails"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BankStatment"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AadharVerificationUpload"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SplashScreen"
             android:exported="false">
             <meta-data
@@ -41,7 +76,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".BussnessDetails"
+            android:name=".BusinessDetails"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
