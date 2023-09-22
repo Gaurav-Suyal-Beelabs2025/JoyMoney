@@ -9,6 +9,16 @@
 
 
 
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/bankdetails_cons1"
                 android:layout_width="match_parent"
@@ -134,12 +144,15 @@
                 android:paddingVertical="@dimen/_13sdp"
                 android:text="@string/verify"
                 android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/bankdetails_branch"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:layout_marginTop="@dimen/_250sdp"
+               app:layout_constraintBottom_toBottomOf="parent"
+
+                />
 
 
 
-
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

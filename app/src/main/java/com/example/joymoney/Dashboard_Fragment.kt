@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -18,6 +21,14 @@ class Dashboard_Fragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_dashboard_, container, false)
+
+
+        val fragmentReferences = view.findViewById<TextView>(R.id.home_txtresume)
+        fragmentReferences.setOnClickListener {
+            it.findNavController().navigate(R.id.action_dashboard_Fragment_to_fragment_references)
+
+        }
+
 
         val recyclerView: RecyclerView = view.findViewById(R.id.home_recycler)
         recyclerView.layoutManager =
@@ -40,7 +51,11 @@ class Dashboard_Fragment : Fragment() {
         val adapter = Adapter_home(items)
         recyclerView.adapter = adapter
 
+
+
         return view
     }
+
+
 }
 

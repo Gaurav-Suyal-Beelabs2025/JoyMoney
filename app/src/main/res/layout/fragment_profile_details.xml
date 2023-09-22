@@ -70,7 +70,7 @@
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/profile_backbtn"
             app:layout_constraintTop_toBottomOf="@+id/txt_profile"
-            tools:text="Saurabh Rajput" />
+            android:text="Saurabh Rajput" />
 
         <TextView
             android:id="@+id/profile_phono"
@@ -79,7 +79,7 @@
             android:layout_marginTop="@dimen/_4sdp"
             android:layout_marginBottom="@dimen/_8sdp"
             android:fontFamily="@font/nunito_sans_regular"
-            tools:text="+91 96611 71289"
+            android:text="+91 96611 71289"
             android:textColor="@color/normal_black"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -97,6 +97,7 @@
         android:layout_marginStart="@dimen/_15sdp"
         android:backgroundTint="@color/normal_black"
         android:src="@drawable/image_logo"
+        android:paddingBottom="@dimen/_15sdp"
         app:layout_constraintBottom_toBottomOf="@+id/profile_cons1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_cons1" />

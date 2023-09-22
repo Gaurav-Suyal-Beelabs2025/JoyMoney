@@ -10,7 +10,11 @@
         android:id="@+id/dashboard_Fragment"
         android:name="com.example.joymoney.Dashboard_Fragment"
         android:label="fragment_dashboard_"
-        tools:layout="@layout/fragment_dashboard_" />
+        tools:layout="@layout/fragment_dashboard_" >
+        <action
+            android:id="@+id/action_dashboard_Fragment_to_fragment_references"
+            app:destination="@id/fragment_references" />
+    </fragment>
     <fragment
         android:id="@+id/profile_Fragment"
         android:name="com.example.joymoney.Profile_Fragment"
@@ -71,4 +75,9 @@
         android:name="com.example.joymoney.Employee_loan_details"
         android:label="fragment_employee_loan_details"
         tools:layout="@layout/fragment_employee_loan_details" />
+    <fragment
+        android:id="@+id/fragment_references"
+        android:name="com.example.joymoney.Fragment_references"
+        android:label="fragment_references"
+        tools:layout="@layout/fragment_references" />
 </navigation>
