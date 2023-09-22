@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 
 class Home_Fragment : Fragment() {
 
@@ -20,16 +21,61 @@ class Home_Fragment : Fragment() {
         val view= inflater.inflate(R.layout.fragment_home_, container, false)
 
     val upload_selfie=view.findViewById<TextView>(R.id.button_upload_selfie)
-
-
+    val Aadhar_verification=view.findViewById<TextView>(R.id.button_Aadhar_verification)
+    val Pan_verification=view.findViewById<TextView>(R.id.button_PAN_Verification)
+    val Allow_Permission = view.findViewById<TextView>(R.id.button_allow_Permission)
+    val Mobile_Number    = view.findViewById<TextView>(R.id.button_Mobile_Number)
+    val Business_Details= view.findViewById<TextView>(R.id.button_business_Details)
+    val Bank_Details   = view.findViewById<TextView>(R.id.button_bank_Details)
+    val Wor_Details  = view.findViewById<TextView>(R.id.button_Work_Details)
          upload_selfie.setOnClickListener {
 
         Navigation.findNavController(view).navigate(R.id.uploadSelfie_Fragment)
 
          }
 
+        Aadhar_verification.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.aadharVerification_Captcha_Fragment)
+        }
+
+      Pan_verification.setOnClickListener {
+
+          Navigation.findNavController(view).navigate(R.id.panVerification_Fragment)
+
+      }
+
+        Allow_Permission.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.allowPermission_Fragment)
+        }
+
+        Mobile_Number.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.mobileNumber_VerificationFragment)
+
+        }
+
+        Business_Details.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.business_Details_Fragment)
+
+        }
 
 
+        Bank_Details.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.bank_Details_Fragment)
+
+        }
+
+
+
+        Wor_Details.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.work_DetailsFragment)
+
+        }
 
         return view
 

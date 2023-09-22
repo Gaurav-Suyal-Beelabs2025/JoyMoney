@@ -23,4 +23,19 @@
     <string name="submit">Submit</string>
     <string name="upload_selfie">Upload Selfie</string>
     <string name="we_would_like_to_see_you">We would like to see you!</string>
+    <string name="business_details">Business Details</string>
+    <string name="enter_your_work_details">Enter Your Work Details</string>
+    <string name="office_email_id">Office email id</string>
+    <string name="send_verification_link">Send verification link</string>
+    <string name="company_name">Company Name</string>
+    <string name="company_website">Company Website</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="this_bank_account_will_be_used_to_transfer_the_amount">This bank account will be used to transfer the amount</string>
+    <string name="bank_account_number">Bank account number</string>
+    <string name="ifsc">IFSC</string>
+    <string name="branch">Branch</string>
+    <string name="verify">Verify</string>
+    <string name="work_details">Work Details</string>
+    <string name="company_address">Company address</string>
+    <string name="company_contact_number">Company contact number</string>
 </resources>

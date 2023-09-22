@@ -10,7 +10,23 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:isScrollContainer="true"
+            app:layout_constraintBottom_toTopOf="@+id/bottomContainer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
 
         <ImageView
             android:id="@+id/ic_arrow_back"
@@ -73,14 +89,14 @@
             app:layout_constraintStart_toStartOf="@id/edit_editmb_number"/>
 
 
-
-    <CheckBox
-        android:id="@+id/checkbox"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginBottom="@dimen/_73sdp"
-        app:layout_constraintStart_toStartOf="@id/edit_editmb_number"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:layout_constraintBottom_toTopOf="@id/buttom_allowand_continue"
+                    app:layout_constraintStart_toStartOf="@id/edit_editmb_number"
+                    />
 
        <TextView
            android:id="@+id/txt_allow_whatsapp"
@@ -97,6 +113,7 @@
 
 
         <TextView
+            android:id="@+id/buttom_allowand_continue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_bacground"
@@ -109,11 +126,30 @@
             android:layout_marginHorizontal="@dimen/_15sdp"
             android:text="@string/allow_amp_continue"
             android:fontFamily="@font/nunito_sans_bold"
+            android:layout_marginBottom="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt_allow_whatsapp"/>
 
 
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/bottomContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+        </LinearLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

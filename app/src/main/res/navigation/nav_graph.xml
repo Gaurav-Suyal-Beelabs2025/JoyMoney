@@ -10,12 +10,38 @@
         android:id="@+id/home_Fragment"
         android:name="com.example.joymoney.Home_Fragment"
         android:label="fragment_home_"
-        tools:layout="@layout/fragment_home_" />
+        tools:layout="@layout/fragment_home_" >
+        <action
+            android:id="@+id/action_home_Fragment_to_uploadSelfie_Fragment"
+            app:destination="@id/uploadSelfie_Fragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_aadharVerification_Captcha_Fragment"
+            app:destination="@id/aadharVerification_Captcha_Fragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_panVerification_Fragment"
+            app:destination="@id/panVerification_Fragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_mobileNumber_VerificationFragment"
+            app:destination="@id/mobileNumber_VerificationFragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_allowPermission_Fragment"
+            app:destination="@id/allowPermission_Fragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_business_Details_Fragment"
+            app:destination="@id/business_Details_Fragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_bank_Details_Fragment"
+            app:destination="@id/bank_Details_Fragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_work_DetailsFragment"
+            app:destination="@id/work_DetailsFragment" />
+    </fragment>
+
     <fragment
         android:id="@+id/transation_fragment"
-        android:name="com.example.joymoney.Transation_ragment"
+        android:name="com.example.joymoney.Transation_Fragment"
         android:label="fragment_transation_ragment"
-        tools:layout="@layout/fragment_transation_ragment" />
+        tools:layout="@layout/fragment_transation_fragment" />
     <fragment
         android:id="@+id/profile_Fragment"
         android:name="com.example.joymoney.Profile_Fragment"
@@ -26,4 +52,44 @@
         android:name="com.example.joymoney.UploadSelfie_Fragment"
         android:label="fragment_upload_selfie_"
         tools:layout="@layout/fragment_upload_selfie_" />
+    <fragment
+        android:id="@+id/aadharVerification_Captcha_Fragment"
+        android:name="com.example.joymoney.AadharVerification_Captcha_Fragment"
+        android:label="fragment_aadhar_verification__captcha_"
+        tools:layout="@layout/fragment_aadhar_verification__captcha_" />
+    <fragment
+        android:id="@+id/allowPermission_Fragment"
+        android:name="com.example.joymoney.AllowPermission_Fragment"
+        android:label="fragment_allow_permission_"
+        tools:layout="@layout/fragment_allow_permission_" />
+    <fragment
+        android:id="@+id/bank_Details_Fragment"
+        android:name="com.example.joymoney.Bank_Details_Fragment"
+        android:label="fragment_bank__details_"
+        tools:layout="@layout/fragment_bank__details_" />
+    <fragment
+        android:id="@+id/business_Details_Fragment"
+        android:name="com.example.joymoney.Business_Details_Fragment"
+        android:label="fragment_business__details_"
+        tools:layout="@layout/fragment_business__details_" />
+    <fragment
+        android:id="@+id/mobileNumber_VerificationFragment"
+        android:name="com.example.joymoney.MobileNumber_VerificationFragment"
+        android:label="fragment_mobile_number__verification"
+        tools:layout="@layout/fragment_mobile_number__verification" />
+    <fragment
+        android:id="@+id/panVerification_Fragment"
+        android:name="com.example.joymoney.PanVerification_Fragment"
+        android:label="fragment_pan_verification_"
+        tools:layout="@layout/fragment_pan_verification_" />
+    <fragment
+        android:id="@+id/splash_ScreenFragment"
+        android:name="com.example.joymoney.Splash_ScreenFragment"
+        android:label="fragment_splash__screen"
+        tools:layout="@layout/fragment_splash__screen" />
+    <fragment
+        android:id="@+id/work_DetailsFragment"
+        android:name="com.example.joymoney.Work_DetailsFragment"
+        android:label="fragment_work__details"
+        tools:layout="@layout/fragment_work__details" />
 </navigation>

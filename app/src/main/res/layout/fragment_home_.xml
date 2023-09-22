@@ -26,7 +26,127 @@
          android:layout_marginBottom="@dimen/_15sdp"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <TextView
+        android:id="@+id/button_Aadhar_verification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bacground"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="Aadhaar Verification"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/button_upload_selfie"/>
 
+
+    <TextView
+        android:id="@+id/button_PAN_Verification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bacground"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="PAN Verification"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/button_Aadhar_verification"/>
+
+    <TextView
+        android:id="@+id/button_allow_Permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bacground"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="Allow Permission"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/button_PAN_Verification"/>
+
+
+    <TextView
+        android:id="@+id/button_Mobile_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bacground"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="Mobile Number"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/button_allow_Permission"/>
+
+    <TextView
+        android:id="@+id/button_business_Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bacground"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="Business Details"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/button_Mobile_Number"/>
+
+    <TextView
+        android:id="@+id/button_bank_Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bacground"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="Bank Details"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/button_business_Details"/>
+
+
+    <TextView
+        android:id="@+id/button_Work_Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bacground"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="Work Details"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/button_bank_Details"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
