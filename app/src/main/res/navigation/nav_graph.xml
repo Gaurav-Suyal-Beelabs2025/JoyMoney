@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_dashboard_Fragment_to_fragment_references"
             app:destination="@id/fragment_references" />
+        <action
+            android:id="@+id/action_dashboard_Fragment_to_fragment_bank_statement"
+            app:destination="@id/fragment_bank_statement" />
     </fragment>
     <fragment
         android:id="@+id/profile_Fragment"
@@ -80,4 +83,9 @@
         android:name="com.example.joymoney.Fragment_references"
         android:label="fragment_references"
         tools:layout="@layout/fragment_references" />
+    <fragment
+        android:id="@+id/fragment_bank_statement"
+        android:name="com.example.joymoney.Fragment_bank_statement"
+        android:label="fragment_bank_statement"
+        tools:layout="@layout/fragment_bank_statement" />
 </navigation>

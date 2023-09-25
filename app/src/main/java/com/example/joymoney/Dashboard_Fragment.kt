@@ -30,6 +30,13 @@ class Dashboard_Fragment : Fragment() {
         }
 
 
+        val Fragment_bank_statement = view.findViewById<TextView>(R.id.home_apply)
+        Fragment_bank_statement.setOnClickListener {
+            it.findNavController().navigate(R.id.action_dashboard_Fragment_to_fragment_bank_statement)
+
+        }
+
+
         val recyclerView: RecyclerView = view.findViewById(R.id.home_recycler)
         recyclerView.layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)

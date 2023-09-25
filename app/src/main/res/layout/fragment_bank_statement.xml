@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".Fragment_bank_statement">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/bankstatement_cons1"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/drawable_details2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/bankstatement_joyicon"
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:src="@drawable/joymoney_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bankstatement_joymoneytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joy Money"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textSize="14sp"
+            android:fontFamily="@font/zilla_slab_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/bankstatement_joyicon"
+            app:layout_constraintStart_toEndOf="@+id/bankstatement_joyicon"
+            app:layout_constraintTop_toTopOf="@+id/bankstatement_joyicon" />
+
+        <TextView
+            android:id="@+id/bankstatement_datetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE"
+            android:textSize="10sp"
+            android:textColor="#707070"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:layout_marginTop="@dimen/_24sdp"
+            app:layout_constraintStart_toStartOf="@+id/bankstatement_joyicon"
+            app:layout_constraintTop_toBottomOf="@+id/bankstatement_joyicon" />
+
+        <TextView
+            android:id="@+id/bankstatement_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/app_black"
+            android:textSize="11sp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="07/06/2023"
+            app:layout_constraintStart_toStartOf="@+id/bankstatement_datetxt"
+            app:layout_constraintTop_toBottomOf="@+id/bankstatement_datetxt" />
+
+        <TextView
+            android:id="@+id/bankstatement_credittxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Credit"
+            android:textSize="13sp"
+            android:textColor="#707070"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:layout_marginTop="@dimen/_28sdp"
+            app:layout_constraintStart_toStartOf="@+id/bankstatement_date"
+            app:layout_constraintTop_toBottomOf="@+id/bankstatement_date" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000 INR"
+            android:textSize="32sp"
+            android:textColor="#0057FF"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintStart_toStartOf="@+id/bankstatement_credittxt"
+            app:layout_constraintTop_toBottomOf="@+id/bankstatement_credittxt" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cfe7cb"
+            android:src="@drawable/curev_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How do you want your money?"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="20sp"
+        android:textColor="@color/app_black"
+        android:fontFamily="@font/nunito_sans_bold"
+        app:layout_constraintStart_toStartOf="@+id/bankstatement_cons1"
+        app:layout_constraintTop_toBottomOf="@+id/bankstatement_cons1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

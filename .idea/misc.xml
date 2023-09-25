@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/drawable/curev_image.xml" value="0.2" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/drawable/drawable_details.xml" value="0.1955" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/drawable/drawable_details2.xml" value="0.1955" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/drawable/rupya_icon.xml" value="0.2265" />
@@ -10,10 +11,11 @@
         <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/font/zilla_slab.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/font/zilla_slab_bold.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
-        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_bank_details.xml" value="0.4" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_bank_details.xml" value="0.264" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_bank_statement.xml" value="0.4" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_dashboard_.xml" value="0.264" />
-        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_employee_loan_details.xml" value="0.2" />
-        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_loan_details.xml" value="0.384" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_employee_loan_details.xml" value="0.46647230320699706" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_loan_details.xml" value="0.264" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_profile_.xml" value="0.4" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_profile_details.xml" value="0.4" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/JoyMoney3/app/src/main/res/layout/fragment_references.xml" value="0.4" />

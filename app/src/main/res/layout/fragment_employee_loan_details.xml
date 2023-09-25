@@ -7,6 +7,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Employee_loan_details">
 
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/emploandetails_cons1"
         android:layout_width="match_parent"
@@ -400,9 +415,16 @@
         android:text="@string/pay"
         android:textColor="@color/white"
         android:textSize="18sp"
+        android:layout_marginTop="@dimen/_180sdp"
+        app:layout_constraintTop_toBottomOf="@+id/emploandetails_cons2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,8 +25,6 @@ class MainActivity : AppCompatActivity() {
             if (destination.id == R.id.profile_details) {
                 bottomNavigationView.visibility = View.GONE
 
-                if (destination.id == R.id.employee_loan_details) {
-                    bottomNavigationView.visibility = View.GONE
 
                     if (destination.id == R.id.security_fragment) {
                         bottomNavigationView.visibility = View.GONE
@@ -41,7 +39,11 @@ class MainActivity : AppCompatActivity() {
                                     bottomNavigationView.visibility = View.GONE
 
 
-                                }
+
+                                    if (destination.id == R.id.employee_loan_details) {
+                                        bottomNavigationView.visibility = View.GONE
+
+                                    }
 
                             } else {
                                 bottomNavigationView.visibility = View.VISIBLE
