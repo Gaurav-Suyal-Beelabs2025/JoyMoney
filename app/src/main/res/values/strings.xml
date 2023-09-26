@@ -63,4 +63,12 @@
     <string name="pay">Pay</string>
     <string name="select_contact">Select contact</string>
     <string name="submit">Submit</string>
+    <string name="activate_joyupi">Activate JoyUPI</string>
+    <string name="transfer_to_bank_account">Transfer to bank account</string>
+    <string name="how_do_you_want_your_money">How do you want your money?</string>
+    <string name="available_credit">Available Credit</string>
+    <string name="date">DATE</string>
+    <string name="joy_money">Joy Money</string>
+    <string name="activate_joy_card">Activate Joy Card</string>
+    <string name="buy_a_phone">Buy a Phone</string>
 </resources>
