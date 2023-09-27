@@ -10,4 +10,6 @@
     <color name="app_black">#231F20</color>
     <color name="normal_black">#909090</color>
     <color name="backgroundcolor">#F3F3F3</color>
+    <color name="green">#0AA95F</color>
+    <color name="red">#F34444</color>
 </resources>

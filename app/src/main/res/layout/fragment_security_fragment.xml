@@ -258,7 +258,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
         android:background="@drawable/drawable_details"
-        android:backgroundTint="#0AA95F"
+        android:backgroundTint="@color/green"
         android:fontFamily="@font/nunito_sans_bold"
         android:gravity="center"
         android:layout_marginBottom="@dimen/_20sdp"

@@ -7,16 +7,16 @@
     android:background="@color/backgroundcolor"
     tools:context=".Fragment_bank_statement">
 
+
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="@dimen/_16sdp">
-
-
+            android:paddingBottom="@dimen/_120sdp"
+            android:layout_height="match_parent">
 
 
 
@@ -107,7 +107,7 @@
             android:id="@+id/bankstatement_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#cfe7cb"
+            android:background="@drawable/imag_drable"
             android:src="@drawable/curev_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -347,7 +347,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_13sdp"
             android:text="*coming soon"
-            android:textColor="#F34444"
+            android:textColor="@color/red"
             android:textSize="14sp"
             android:fontFamily="@font/nunito_sans_semibold"
             app:layout_constraintBottom_toBottomOf="@+id/bankstatement_byphone"
@@ -367,13 +367,14 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="@dimen/_31sdp"
                 android:background="@drawable/drawable_details"
-                android:backgroundTint="#0AA95F"
+                android:backgroundTint="@color/green"
                 android:fontFamily="@font/nunito_sans_bold"
                 android:gravity="center"
                 android:paddingVertical="@dimen/_13sdp"
                 android:text="@string/proceed"
                 android:textColor="@color/white"
                 android:textSize="18sp"
+                android:layout_marginBottom="@dimen/_20sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -381,7 +382,7 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </androidx.core.widget.NestedScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

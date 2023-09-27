@@ -71,4 +71,11 @@
     <string name="joy_money">Joy Money</string>
     <string name="activate_joy_card">Activate Joy Card</string>
     <string name="buy_a_phone">Buy a Phone</string>
+    <string name="processing_fee_2">Processing Fee : 2%</string>
+    <string name="rate_of_intrest_0_1_per_day">Rate of intrest : 0.1% per day</string>
+    <string name="repayment_date_15_days_from_disbursal_date">Repayment date : 15 days from disbursal date</string>
+    <string name="disbursement_amount_rs_4900">Disbursement amount : Rs.4900/-</string>
+    <string name="bounce_charges_rs_150">Bounce charges : Rs.150/-</string>
+    <string name="per_day_late_fee_rs_15">Per day late fee : Rs.15/-</string>
+    <string name="dismiss">Dismiss</string>
 </resources>
