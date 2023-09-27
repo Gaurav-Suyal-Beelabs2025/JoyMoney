@@ -1,4 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="backgroungund">@color/white </color>
     <!-- Base application theme. -->
     <style name="Theme.JoyMoney" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
