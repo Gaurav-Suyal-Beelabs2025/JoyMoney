@@ -14,36 +14,38 @@
         android:fillViewport="true"
         android:isScrollContainer="true"
         app:layout_constraintBottom_toTopOf="@+id/bottomContainer"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
 
-        <ImageView
-        android:id="@+id/back_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_15sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/frame"/>
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/frame"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/adharverification_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:fontFamily="@font/zilla_slab_bold"
-        android:text="@string/aadhaar_verification"
-        android:textColor="@color/black"
-        android:textSize="32sp"
-        app:layout_constraintStart_toStartOf="@id/back_image"
-        app:layout_constraintTop_toBottomOf="@id/back_image" />
+            <TextView
+                android:id="@+id/adharverification_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/zilla_slab_bold"
+                android:text="@string/aadhaar_verification"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                app:layout_constraintStart_toStartOf="@id/back_image"
+                app:layout_constraintTop_toBottomOf="@id/back_image" />
 
             <ImageView
                 android:id="@+id/vertical_image"
@@ -53,113 +55,112 @@
                 app:layout_constraintBottom_toBottomOf="@+id/back_image"
                 app:layout_constraintEnd_toEndOf="@+id/pin_view"
                 app:layout_constraintTop_toTopOf="@id/back_image" />
-    <TextView
-        android:id="@+id/send_otp_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/nunito"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@id/adharverification_txt"
-        android:layout_marginTop="@dimen/_5sdp"
-        app:layout_constraintTop_toBottomOf="@id/adharverification_txt"
-        android:text="@string/enter_otp_we_have_sent_on_your_phone_nnumber"/>
 
-    <com.chaos.view.PinView
-        android:id="@+id/pin_view"
-        style="@style/PinWidget.PinView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_24sdp"
-        android:cursorVisible="true"
-        android:inputType="number"
-        android:itemBackground="#EBEBEB"
-        app:cursorColor="@color/black"
-        app:hideLineWhenFilled="true"
-        app:itemCount="6"
-        app:itemHeight="@dimen/_40sdp"
-        app:itemRadius="12dp"
-        app:itemSpacing="@dimen/_7sdp"
-        app:itemWidth="@dimen/_40sdp"
-        app:layout_constraintStart_toStartOf="@+id/adharverification_txt"
-        app:layout_constraintTop_toBottomOf="@id/send_otp_txt"
-        app:lineColor="#DDD8D8"
-        app:lineWidth="@dimen/_1sdp" />
+            <TextView
+                android:id="@+id/send_otp_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/nunito"
+                android:text="@string/enter_otp_we_have_sent_on_your_phone_nnumber"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/adharverification_txt"
+                app:layout_constraintTop_toBottomOf="@id/adharverification_txt" />
 
-    <TextView
-        android:id="@+id/timer_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="@dimen/_30sdp"
-        app:layout_constraintTop_toBottomOf="@id/pin_view"
-        android:text="@string/_00_30"
-        android:fontFamily="@font/nunito_bold"
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-        android:layout_marginBottom="@dimen/_15sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+            <com.chaos.view.PinView
+                android:id="@+id/pin_view"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:itemBackground="#EBEBEB"
+                app:cursorColor="@color/black"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemHeight="@dimen/_40sdp"
+                app:itemRadius="12dp"
+                app:itemSpacing="@dimen/_7sdp"
+                app:itemWidth="@dimen/_40sdp"
+                app:layout_constraintStart_toStartOf="@+id/adharverification_txt"
+                app:layout_constraintTop_toBottomOf="@id/send_otp_txt"
+                app:lineColor="#DDD8D8"
+                app:lineWidth="@dimen/_1sdp" />
 
-    <TextView
-        android:id="@+id/recived_otp_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:text="@string/havn_t_recieved_any_otp_yet"
-        android:textSize="14sp"
-        android:fontFamily="@font/nunito"
-        app:layout_constraintEnd_toEndOf="@+id/timer_txt"
-        app:layout_constraintStart_toStartOf="@+id/timer_txt"
-        app:layout_constraintTop_toBottomOf="@id/timer_txt" />
+            <TextView
+                android:id="@+id/timer_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/_00_30"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pin_view" />
+
+            <TextView
+                android:id="@+id/recived_otp_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/nunito"
+                android:text="@string/havn_t_recieved_any_otp_yet"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/timer_txt"
+                app:layout_constraintStart_toStartOf="@+id/timer_txt"
+                app:layout_constraintTop_toBottomOf="@id/timer_txt" />
 
 
-        <TextView
-        android:id="@+id/resend_button"
-        android:layout_width="153sp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_13sdp"
-        android:layout_marginBottom="12dp"
-        android:gravity="center"
-        android:fontFamily="@font/nunito"
-        android:backgroundTint="@color/white"
-        android:layout_marginTop="@dimen/_18sdp"
-        android:background="@drawable/button_draw"
-        android:paddingVertical="@dimen/_15sdp"
-        android:text="Resend OTP"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/green"
-        app:layout_constraintTop_toBottomOf="@id/recived_otp_txt"
-        app:layout_constraintEnd_toEndOf="@+id/pin_view"
-        app:layout_constraintStart_toStartOf="@+id/pin_view" />
+            <TextView
+                android:id="@+id/resend_button"
+                android:layout_width="153sp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/button_draw"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/nunito"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_15sdp"
+                android:text="Resend OTP"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/green"
+                app:layout_constraintEnd_toEndOf="@+id/pin_view"
+                app:layout_constraintStart_toStartOf="@+id/pin_view"
+                app:layout_constraintTop_toBottomOf="@id/recived_otp_txt" />
 
-    <TextView
-        android:id="@+id/powered_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Powered by"
-        android:textSize="12sp"
-        android:layout_marginBottom="@dimen/_5sdp"
-        android:fontFamily="@font/nunito"
-        android:layout_marginTop="@dimen/_10sdp"
-        app:layout_constraintBottom_toTopOf="@id/aadhar_logo"
-        app:layout_constraintEnd_toEndOf="@+id/resend_button"
-        app:layout_constraintStart_toStartOf="@+id/resend_button"
-   />
+            <TextView
+                android:id="@+id/powered_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/nunito"
+                android:text="Powered by"
+                app:layout_constraintTop_toBottomOf="@id/resend_button"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/_100sdp"
+                app:layout_constraintBottom_toTopOf="@id/aadhar_logo"
+                app:layout_constraintEnd_toEndOf="@+id/resend_button"
+                app:layout_constraintStart_toStartOf="@+id/resend_button" />
 
-    <ImageView
-        android:id="@+id/aadhar_logo"
-        android:layout_width="@dimen/_70sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:layout_marginBottom="@dimen/_20sdp"
-        app:layout_constraintBottom_toTopOf="@id/verifi_button"
-        android:background="@drawable/aadhaar_logo_1"
-        app:layout_constraintEnd_toEndOf="@+id/resend_button"
-        app:layout_constraintStart_toStartOf="@+id/resend_button"
-        />
+            <ImageView
+                android:id="@+id/aadhar_logo"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/aadhaar_logo_1"
+                app:layout_constraintBottom_toTopOf="@id/verifi_button"
+                app:layout_constraintEnd_toEndOf="@+id/resend_button"
+                app:layout_constraintStart_toStartOf="@+id/resend_button" />
 
             <TextView
                 android:id="@+id/verifi_button"

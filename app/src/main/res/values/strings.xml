@@ -43,6 +43,13 @@
     <string name="confirm">Confirm</string>
     <string name="joy_money">Joy Money</string>
     <string name="proceed">Proceed</string>
+    <string name="monthly_profit">Monthly Profit</string>
+    <string name="business_name">Business Name</string>
+    <string name="business_pan">Business PAN</string>
+    <string name="business_address">Business Address</string>
+    <string name="nature_of_business">Nature of Business</string>
+    <string name="shop_type">Shop Type</string>
+    <string name="propritor_pvt_ltd_llp">Propritor/ Pvt. Ltd./ LLP</string>
 
     <string-array name="programming_languages">
         <item>Java</item>

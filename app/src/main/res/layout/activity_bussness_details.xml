@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/liitlegray"
     tools:context=".BusinessDetails">
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -43,7 +44,7 @@
          app:layout_constraintStart_toStartOf="@id/bussness_details_txt"
         app:layout_constraintTop_toBottomOf="@id/bussness_details_txt"/>
     <TextView
-        android:id="@+id/gstnumber"
+        android:id="@+id/gst_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
@@ -65,7 +66,7 @@
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_12sdp"
         android:hint="@string/gst_no"
-        app:layout_constraintTop_toBottomOf="@id/gstnumber"
+        app:layout_constraintTop_toBottomOf="@id/gst_number"
         app:layout_constraintStart_toStartOf="@id/checkbox"
         android:paddingStart="18dp"
         android:background="@drawable/border"
@@ -84,7 +85,7 @@
                 android:paddingVertical="@dimen/_15sdp"
                android:drawableBottom="@drawable/keyboard_arrow_down_black_24dp_3"
                 android:gravity="center_vertical"
-                android:hint="Propritor/ Pvt. Ltd./ LLP"
+                android:hint="@string/propritor_pvt_ltd_llp"
                 android:paddingHorizontal="@dimen/_15sdp"
                 android:textSize="14sp"
                 app:spinner_item_height="55dp"

@@ -138,12 +138,14 @@
 
         <RadioButton
             android:id="@+id/radio1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_5sdp"
             android:layout_marginTop="@dimen/_5sdp"
             android:paddingVertical="@dimen/_5sdp"
             android:text="Activate JoyUPI"
+            android:paddingEnd="@dimen/_15sdp"
+            android:drawableRight="@drawable/read_details"
             android:fontFamily="@font/nunito"
             android:textColor="@color/black"
             android:textSize="16sp" />
@@ -170,6 +172,7 @@
             android:text="Buy a Phone"
             android:textColor="@color/black"
             android:textSize="16sp" />
+
 
     </RadioGroup>
 

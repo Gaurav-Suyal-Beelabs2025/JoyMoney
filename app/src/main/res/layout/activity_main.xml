@@ -67,12 +67,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/upload_Adhar_button"
         android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/credit_money_button"
-        android:layout_width="wrap_content"
-        android:text="creditmoney"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bank_statement_button"
-        android:layout_height="wrap_content"/>
+<!--    <Button-->
+<!--        android:id="@+id/credit_money_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="creditmoney"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/bank_statement_button"-->
+<!--        android:layout_height="wrap_content"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val uploadadhar=findViewById<Button>(R.id.upload_Adhar_button)
         val bankstatment=findViewById<Button>(R.id.bank_statement_button)
 
-        val credit=findViewById<Button>(R.id.credit_money_button)
+//        val credit=findViewById<Button>(R.id.credit_money_button)
 
 
         val spash=findViewById<Button>(R.id.splash_button)
@@ -62,9 +62,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-       credit.setOnClickListener {
-            val intent = Intent(this, BankStatementCredit::class.java)
-            startActivity(intent)
-        }
+//       credit.setOnClickListener {
+//            val intent = Intent(this, BankStatementCredit::class.java)
+//            startActivity(intent)
+//        }
     }
 }
