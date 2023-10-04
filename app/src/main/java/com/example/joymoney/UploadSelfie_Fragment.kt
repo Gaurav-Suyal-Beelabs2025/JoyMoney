@@ -1,6 +1,8 @@
 package com.example.joymoney
 
+import android.app.Activity
 import android.content.Intent
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.provider.MediaStore
 import androidx.fragment.app.Fragment
@@ -12,7 +14,7 @@ import android.widget.ImageView
 
 class UploadSelfie_Fragment : Fragment() {
 
-     private val REQUEST_CODE = 69
+     private val REQUEST_CODE = 123
      private lateinit var imageView: ImageView
      private lateinit var btnTakePicture: Button
 
@@ -38,6 +40,8 @@ class UploadSelfie_Fragment : Fragment() {
 
     return view
     }
+
+
 
 
 }

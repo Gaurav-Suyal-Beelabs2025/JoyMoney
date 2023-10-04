@@ -38,4 +38,38 @@
     <string name="work_details">Work Details</string>
     <string name="company_address">Company address</string>
     <string name="company_contact_number">Company contact number</string>
+    <string name="rent_agreement">Rent Agreement</string>
+    <string name="upload_rent_agreement">Upload Rent Agreement</string>
+    <string name="add_more">+ Add More</string>
+    <string name="details">Details</string>
+    <string name="rent_aggrement_should_be_6_months_old">Rent aggrement should be 6 months old</string>
+    <string name="residence_details">Residence Details</string>
+    <string name="current">Current</string>
+    <string name="select_property_ownership">Select Property Ownership</string>
+    <string name="upload_any_utility_bill_of_your_current_residence_address">Upload any utility bill of your current residence \naddress</string>
+    <string name="select_bill_type_from_the_below_list">Select bill type from the below list</string>
+    <string name="upload_utility_bill">Upload Utility Bill</string>
+    <string name="delivered">Delivered</string>
+    <string name="order_id">Order ID :</string>
+    <string name="_4_0">4.0</string>
+    <string name="delivered_in">Delivered in</string>
+    <string name="_34_mins">34 mins</string>
+    <string name="rate_your_delivery">Rate your delivery</string>
+    <string name="thanks_for_choosing_handover">Thanks for choosing Handover.</string>
+    <string name="order_details">Order Details</string>
+    <string name="add_comments">Add Comments</string>
+
+    <string-array name="spiner">
+
+        <item>Self Owned</item>
+        <item>Rajeev</item>
+        <item>saurabh</item>
+        <item>reeta</item>
+        <item>pancham</item>
+        <item>deepak</item>
+        <item>utsav</item>
+
+
+    </string-array>
+
 </resources>

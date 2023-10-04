@@ -28,6 +28,11 @@ class Home_Fragment : Fragment() {
     val Business_Details= view.findViewById<TextView>(R.id.button_business_Details)
     val Bank_Details   = view.findViewById<TextView>(R.id.button_bank_Details)
     val Wor_Details  = view.findViewById<TextView>(R.id.button_Work_Details)
+    val Rent_Agreement =view.findViewById<TextView>(R.id.button_Rent_Agreement)
+    val Residence_Details =view.findViewById<TextView>(R.id.button_Residence_Details)
+
+
+
          upload_selfie.setOnClickListener {
 
         Navigation.findNavController(view).navigate(R.id.uploadSelfie_Fragment)
@@ -76,6 +81,20 @@ class Home_Fragment : Fragment() {
             Navigation.findNavController(view).navigate(R.id.work_DetailsFragment)
 
         }
+
+
+        Rent_Agreement.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.rent_AgreementFragment)
+
+        }
+
+        Residence_Details.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.residence_DetailsFragment)
+
+        }
+
 
         return view
 

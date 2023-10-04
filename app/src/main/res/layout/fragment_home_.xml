@@ -8,6 +8,17 @@
     tools:context=".Home_Fragment">
 
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
 
     <TextView
         android:id="@+id/button_upload_selfie"
@@ -149,4 +160,46 @@
         app:layout_constraintTop_toBottomOf="@id/button_bank_Details"/>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/button_Rent_Agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bacground"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="Rent Agreement"
+        android:fontFamily="@font/nunito_sans_bold"
+        app:layout_constraintTop_toBottomOf="@id/button_Work_Details"/>
+
+
+            <TextView
+                android:id="@+id/button_Residence_Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bacground"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:text="Residence Details"
+                 android:fontFamily="@font/nunito_sans_bold"
+                android:layout_marginBottom="@dimen/_80sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_Rent_Agreement"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>

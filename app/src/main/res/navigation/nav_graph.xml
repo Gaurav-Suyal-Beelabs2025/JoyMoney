@@ -35,6 +35,12 @@
         <action
             android:id="@+id/action_home_Fragment_to_work_DetailsFragment"
             app:destination="@id/work_DetailsFragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_rent_AgreementFragment"
+            app:destination="@id/rent_AgreementFragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_residence_DetailsFragment"
+            app:destination="@id/residence_DetailsFragment" />
     </fragment>
 
     <fragment
@@ -92,4 +98,14 @@
         android:name="com.example.joymoney.Work_DetailsFragment"
         android:label="fragment_work__details"
         tools:layout="@layout/fragment_work__details" />
+    <fragment
+        android:id="@+id/rent_AgreementFragment"
+        android:name="com.example.joymoney.Rent_AgreementFragment"
+        android:label="fragment_rent__agreement"
+        tools:layout="@layout/fragment_rent__agreement" />
+    <fragment
+        android:id="@+id/residence_DetailsFragment"
+        android:name="com.example.joymoney.Residence_DetailsFragment"
+        android:label="residence_detailsdetails"
+        tools:layout="@layout/residence_detailsdetails" />
 </navigation>

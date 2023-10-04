@@ -48,8 +48,15 @@ class MainActivity : AppCompatActivity() {
             } else if (destination.id == R.id.work_DetailsFragment) {
                 bottomNavigationView.visibility = View.GONE
 
+            } else if (destination.id == R.id.rent_AgreementFragment) {
+                    bottomNavigationView.visibility = View.GONE
 
-            } else {
+            } else if (destination.id == R.id.residence_DetailsFragment) {
+                bottomNavigationView.visibility = View.GONE
+
+
+
+                } else {
 
                 bottomNavigationView.visibility = View.VISIBLE
             }
