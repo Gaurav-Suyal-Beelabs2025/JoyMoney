@@ -73,6 +73,16 @@
     <string name="item_weight">Item Weight</string>
     <string name="_2_kgs">2 Kgs</string>
     <string name="charges_details">Charges Details</string>
+    <string name="reorder">Reorder</string>
+    <string name="na">NA</string>
+    <string name="mode">Mode</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="customer_collection">Customer Collection</string>
+    <string name="_70">₹70</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="_35">₹35</string>
+    <string name="per_kms_charges_after_2kms">Per kms Charges (after 2kms)</string>
+    <string name="base_charges_for_2kms">Base Charges (for 2kms)</string>
 
     <string-array name="spiner">
 
