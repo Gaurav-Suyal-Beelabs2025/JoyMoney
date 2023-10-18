@@ -55,8 +55,14 @@ class MainActivity : AppCompatActivity() {
                 bottomNavigationView.visibility = View.GONE
 
 
+            } else if (destination.id == R.id.order_DetailsFragment) {
+                bottomNavigationView.visibility = View.GONE
 
-                } else {
+
+
+
+
+            } else {
 
                 bottomNavigationView.visibility = View.VISIBLE
             }

@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class Home_Fragment : Fragment() {
 
@@ -30,8 +31,8 @@ class Home_Fragment : Fragment() {
     val Wor_Details  = view.findViewById<TextView>(R.id.button_Work_Details)
     val Rent_Agreement =view.findViewById<TextView>(R.id.button_Rent_Agreement)
     val Residence_Details =view.findViewById<TextView>(R.id.button_Residence_Details)
-
-
+    val add_comments=view.findViewById<TextView>(R.id.buttom_add_comments)
+    val Reorder =view.findViewById<TextView>(R.id.buttom_Reorder)
 
          upload_selfie.setOnClickListener {
 
@@ -91,9 +92,28 @@ class Home_Fragment : Fragment() {
 
         Residence_Details.setOnClickListener {
 
-            Navigation.findNavController(view).navigate(R.id.residence_DetailsFragment)
+            Navigation.findNavController(view).navigate(R.id.residence_DetailsFragment
+            )
 
         }
+
+        add_comments.setOnClickListener {
+            val dialog = BottomSheetDialog(requireActivity())
+            val view = layoutInflater.inflate(R.layout.fragment_order__delivered_, null)
+
+            dialog.setCancelable(true)
+            dialog.setContentView(view)
+            dialog.show()
+
+        }
+
+        Reorder.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.order_DetailsFragment)
+
+
+        }
+
 
 
         return view

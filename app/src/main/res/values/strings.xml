@@ -58,6 +58,21 @@
     <string name="thanks_for_choosing_handover">Thanks for choosing Handover.</string>
     <string name="order_details">Order Details</string>
     <string name="add_comments">Add Comments</string>
+    <string name="two_wheeler_delivery">Two Wheeler Delivery</string>
+    <string name="take_10_15_mins_to_arrive">Take 10-15 mins to arrive!</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="rajeev_chauk_new_delhi_connaught_place_delhi_110091">Rajeev chauk new delhi, connaught place delhi-110091</string>
+    <string name="drop">Drop</string>
+    <string name="distance">Distance</string>
+    <string name="_12_48_kms">12.48 kms</string>
+    <string name="delivery_item">Delivery Item</string>
+    <string name="food">Food</string>
+    <string name="pickup_date_amp_time"><![CDATA[Pickup Date & Time]]></string>
+    <string name="_01_02_2033_12_11_pm">01/02/2033 12:11 PM</string>
+    <string name="delivery_date_amp_time"><![CDATA[Delivery Date & Time]]></string>
+    <string name="item_weight">Item Weight</string>
+    <string name="_2_kgs">2 Kgs</string>
+    <string name="charges_details">Charges Details</string>
 
     <string-array name="spiner">
 
