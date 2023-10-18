@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".Dashboard_Fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/home_cons1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECF0F1"
+        android:paddingBottom="@dimen/_18sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/txt_hinikhil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/hi_nikhil_good_morning"
+            android:textColor="@color/app_black"
+            android:textSize="20sp"
+            android:fontFamily="@font/zilla_slab"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/home_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/notifications_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_hinikhil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_hinikhil" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_cons2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/drawable_details"
+            android:backgroundTint="#FDFEFE "
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_hinikhil" >
+
+
+            <ImageView
+                android:id="@+id/home_rupya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rupya_icon"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_creditline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/joy_creditline"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/normal_black"
+                android:fontFamily="@font/nunito_sans_semibold"
+                app:layout_constraintStart_toEndOf="@+id/home_rupya"
+                app:layout_constraintTop_toTopOf="@+id/home_rupya" />
+
+            <TextView
+                android:id="@+id/txt_5600inr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5600 INR"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textSize="28sp"
+                android:textColor="#2F5ACB"
+                app:layout_constraintBottom_toBottomOf="@+id/home_rupya"
+                app:layout_constraintStart_toStartOf="@+id/txt_creditline"
+                app:layout_constraintTop_toBottomOf="@+id/txt_creditline" />
+
+            <TextView
+                android:id="@+id/txt_useblance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Used Balance"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:layout_marginTop="@dimen/_19sdp"
+                android:textColor="@color/normal_black"
+                app:layout_constraintStart_toStartOf="@+id/home_rupya"
+                app:layout_constraintTop_toBottomOf="@+id/home_rupya" />
+
+            <TextView
+                android:id="@+id/txt_2800inr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2800 INR"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/_16sdp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                app:layout_constraintStart_toStartOf="@+id/txt_useblance"
+                app:layout_constraintTop_toBottomOf="@+id/txt_useblance" />
+
+            <View
+                android:id="@+id/home_view1"
+                android:layout_width="1dp"
+                android:layout_height="32dp"
+                android:background="#DAF4E8"
+                android:layout_marginStart="@dimen/_27sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_2800inr"
+                app:layout_constraintStart_toEndOf="@+id/txt_useblance"
+                app:layout_constraintTop_toTopOf="@+id/txt_useblance" />
+
+            <TextView
+                android:id="@+id/txt_nextpayment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="Next Repayment Date"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/home_view1"
+                app:layout_constraintTop_toTopOf="@+id/txt_useblance" />
+
+            <TextView
+                android:id="@+id/txt_sep2023"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11-Sep-2023"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/_16sdp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                app:layout_constraintStart_toStartOf="@+id/txt_nextpayment"
+                app:layout_constraintTop_toBottomOf="@+id/txt_nextpayment" />
+
+
+            <TextView
+                android:id="@+id/home_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/drawable_details"
+                android:backgroundTint="@color/green"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_13sdp"
+                android:text="@string/apply"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_sep2023" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:orientation="horizontal"
+        tools:listitem="@layout/item_home"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_cons1" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/drawable_details"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_19sdp"
+        app:layout_constraintTop_toBottomOf="@+id/home_recycler">
+
+        <TextView
+            android:id="@+id/home_txtkyc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kyc_pending"
+            android:textColor="@color/app_black"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/home_txtaadhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aadhaar_verification"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textSize="14sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintStart_toStartOf="@+id/home_txtkyc"
+            app:layout_constraintTop_toBottomOf="@+id/home_txtkyc" />
+
+        <TextView
+            android:id="@+id/home_txtresume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resume"
+            android:textSize="16sp"
+            android:textColor="#0057FF"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/home_txtkyc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/home_txtkyc" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:background="#0057FF"
+            app:layout_constraintEnd_toEndOf="@+id/home_txtresume"
+            app:layout_constraintStart_toStartOf="@+id/home_txtresume"
+            app:layout_constraintTop_toBottomOf="@+id/home_txtresume" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

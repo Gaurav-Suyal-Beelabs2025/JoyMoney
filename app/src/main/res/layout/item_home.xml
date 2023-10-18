@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3F3F3"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemimahe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingVertical="@dimen/_12sdp"
+        android:paddingHorizontal="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/drawable_details">
+
+
+        <ImageView
+            android:id="@+id/home_recimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/appointment" />
+
+        <TextView
+            android:id="@+id/home_rectxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee \nLoan"
+            android:gravity="center"
+            android:textColor="@color/normal_black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_11sdp"
+            app:layout_constraintEnd_toEndOf="@+id/home_recimg"
+            app:layout_constraintStart_toStartOf="@+id/home_recimg"
+            app:layout_constraintTop_toBottomOf="@+id/home_recimg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

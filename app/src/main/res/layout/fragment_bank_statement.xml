@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".Fragment_bank_statement">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_120sdp"
+            android:layout_height="match_parent">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/bankstatement_cons1"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/drawable_details2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/bankstatement_joyicon"
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:src="@drawable/joymoney_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bankstatement_joymoneytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/joy_money"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textSize="14sp"
+            android:fontFamily="@font/zilla_slab_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/bankstatement_joyicon"
+            app:layout_constraintStart_toEndOf="@+id/bankstatement_joyicon"
+            app:layout_constraintTop_toTopOf="@+id/bankstatement_joyicon" />
+
+        <TextView
+            android:id="@+id/bankstatement_datetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textSize="10sp"
+            android:textColor="#707070"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:layout_marginTop="@dimen/_24sdp"
+            app:layout_constraintStart_toStartOf="@+id/bankstatement_joyicon"
+            app:layout_constraintTop_toBottomOf="@+id/bankstatement_joyicon" />
+
+        <TextView
+            android:id="@+id/bankstatement_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/app_black"
+            android:textSize="11sp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="07/06/2023"
+            app:layout_constraintStart_toStartOf="@+id/bankstatement_datetxt"
+            app:layout_constraintTop_toBottomOf="@+id/bankstatement_datetxt" />
+
+        <TextView
+            android:id="@+id/bankstatement_credittxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/available_credit"
+            android:textSize="13sp"
+            android:textColor="#707070"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:layout_marginTop="@dimen/_28sdp"
+            app:layout_constraintStart_toStartOf="@+id/bankstatement_date"
+            app:layout_constraintTop_toBottomOf="@+id/bankstatement_date" />
+
+        <TextView
+            android:id="@+id/bankstatement_5k"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000 INR"
+            android:textSize="32sp"
+            android:textColor="#0057FF"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintStart_toStartOf="@+id/bankstatement_credittxt"
+            app:layout_constraintTop_toBottomOf="@+id/bankstatement_credittxt" />
+
+        <ImageView
+            android:id="@+id/bankstatement_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/imag_drable"
+            android:src="@drawable/curev_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/bankstatement_wantmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_do_you_want_your_money"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="20sp"
+        android:textColor="@color/app_black"
+        android:fontFamily="@font/nunito_sans_bold"
+        app:layout_constraintStart_toStartOf="@+id/bankstatement_cons1"
+        app:layout_constraintTop_toBottomOf="@+id/bankstatement_cons1" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/bankstatement_cons2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_14sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/bankstatement_wantmoney"
+
+        >
+
+        <RadioButton
+            android:id="@+id/bankstatement_check1"
+            android:layout_width="26dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bankstatement_transferbank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transfer_to_bank_account"
+            android:textColor="#686868"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_7sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/bankstatement_check1"
+            app:layout_constraintStart_toEndOf="@+id/bankstatement_check1"
+            app:layout_constraintTop_toTopOf="@+id/bankstatement_check1" />
+
+        <EditText
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_13sdp"
+            android:hint="Enter Amount"
+            android:textSize="16sp"
+            android:textColorHint="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:paddingStart="@dimen/_13sdp"
+            android:paddingVertical="@dimen/_9sdp"
+            android:backgroundTint="#EBEBEB"
+            android:singleLine="true"
+            android:background="@drawable/drawable_details"
+           android:layout_marginTop="@dimen/_14sdp"
+            app:layout_constraintTop_toBottomOf="@+id/bankstatement_transferbank"
+            tools:layout_editor_absoluteX="88dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/bankstatement_cons3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_14sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/bankstatement_cons2"
+
+        >
+
+        <RadioButton
+            android:id="@+id/bankstatement_check2"
+            android:layout_width="26dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bankstatement_joyupi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activate_joyupi"
+            android:textColor="#686868"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_7sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/bankstatement_check2"
+            app:layout_constraintStart_toEndOf="@+id/bankstatement_check2"
+            app:layout_constraintTop_toTopOf="@+id/bankstatement_check2" />
+
+        <TextView
+            android:id="@+id/bankstatement_readdetails1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:text="Read Details"
+            android:textColor="#0057FF"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            app:layout_constraintBottom_toBottomOf="@+id/bankstatement_joyupi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bankstatement_joyupi" />
+
+        <View
+            android:layout_width="82dp"
+            android:layout_height="1dp"
+            android:background="#0057FF"
+            app:layout_constraintEnd_toEndOf="@+id/bankstatement_readdetails1"
+            app:layout_constraintStart_toStartOf="@+id/bankstatement_readdetails1"
+            app:layout_constraintTop_toBottomOf="@+id/bankstatement_readdetails1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/bankstatement_cons4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_14sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/bankstatement_cons3"
+
+        >
+
+        <RadioButton
+            android:id="@+id/bankstatement_check3"
+            android:layout_width="26dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bankstatement_joycar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activate_joy_card"
+            android:textColor="#686868"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_7sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/bankstatement_check3"
+            app:layout_constraintStart_toEndOf="@+id/bankstatement_check3"
+            app:layout_constraintTop_toTopOf="@+id/bankstatement_check3" />
+
+        <TextView
+            android:id="@+id/bankstatement_readdetails2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:text="Read Details"
+            android:textColor="#0057FF"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            app:layout_constraintBottom_toBottomOf="@+id/bankstatement_joycar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bankstatement_joycar" />
+
+        <View
+            android:layout_width="82dp"
+            android:layout_height="1dp"
+            android:background="#0057FF"
+            app:layout_constraintEnd_toEndOf="@+id/bankstatement_readdetails2"
+            app:layout_constraintStart_toStartOf="@+id/bankstatement_readdetails2"
+            app:layout_constraintTop_toBottomOf="@+id/bankstatement_readdetails2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/bankstatement_cons5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_14sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/drawable_details2"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/bankstatement_cons4"
+
+        >
+
+        <RadioButton
+            android:id="@+id/bankstatement_check4"
+            android:layout_width="26dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bankstatement_byphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buy_a_phone"
+            android:textColor="#686868"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginStart="@dimen/_7sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/bankstatement_check4"
+            app:layout_constraintStart_toEndOf="@+id/bankstatement_check4"
+            app:layout_constraintTop_toTopOf="@+id/bankstatement_check4" />
+
+        <TextView
+            android:id="@+id/bankstatement_comingsoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:text="*coming soon"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            app:layout_constraintBottom_toBottomOf="@+id/bankstatement_byphone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bankstatement_byphone" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/home_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="@dimen/_31sdp"
+                android:background="@drawable/drawable_details"
+                android:backgroundTint="@color/green"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_13sdp"
+                android:text="@string/proceed"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bankstatement_cons5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

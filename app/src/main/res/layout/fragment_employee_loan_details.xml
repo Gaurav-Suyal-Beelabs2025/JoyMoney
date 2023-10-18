@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Employee_loan_details">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/emploandetails_cons1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/security_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_btn"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/security_selectcompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_details"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:textSize="24sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/zilla_slab_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/security_backbtn"
+            app:layout_constraintStart_toEndOf="@+id/security_backbtn"
+            app:layout_constraintTop_toTopOf="@+id/security_backbtn" />
+
+        <ImageView
+            android:id="@+id/security_threedot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/three_dot"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/security_selectcompany"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/security_selectcompany" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/emploandetails_cons2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/drawable_details"
+        app:layout_constraintTop_toBottomOf="@+id/emploandetails_cons1">
+
+
+        <TextView
+            android:id="@+id/emploandetails_emploan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/employee_loan"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="20sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/zilla_slab_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/emploandetails_loanid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_id"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_emploan"
+            app:layout_constraintTop_toBottomOf="@+id/emploandetails_emploan" />
+
+        <TextView
+            android:id="@+id/emploandetails_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMPARTL1001"
+            android:layout_marginStart="@dimen/_89sdp"
+            android:textSize="16sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/emploandetails_loanid"
+            app:layout_constraintStart_toEndOf="@+id/emploandetails_loanid"
+            app:layout_constraintTop_toTopOf="@+id/emploandetails_loanid" />
+
+        <TextView
+            android:id="@+id/loandetails_loanamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_loanid"
+            app:layout_constraintTop_toBottomOf="@+id/emploandetails_loanid" />
+
+        <TextView
+            android:id="@+id/loandetails_airtel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Airtel"
+            android:textSize="16sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/loandetails_loanamount"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_id"
+            app:layout_constraintTop_toTopOf="@+id/loandetails_loanamount" />
+
+        <TextView
+            android:id="@+id/loandetails_loanamt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_amount"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_loanamount"
+            app:layout_constraintTop_toBottomOf="@+id/loandetails_loanamount" />
+
+        <TextView
+            android:id="@+id/loandetails_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000"
+            android:textSize="16sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/loandetails_loanamt"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_airtel"
+            app:layout_constraintTop_toTopOf="@+id/loandetails_loanamt" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_disdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disbursement_date"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_loanamt"
+            app:layout_constraintTop_toBottomOf="@+id/loandetails_loanamt" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/05/22"
+            android:textSize="16sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/emploandetails_disdate"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_airtel"
+            app:layout_constraintTop_toTopOf="@+id/emploandetails_disdate" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_tenure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_tenure"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_disdate"
+            app:layout_constraintTop_toBottomOf="@+id/emploandetails_disdate" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_tenuredate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Month"
+            android:textSize="16sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/emploandetails_tenure"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_airtel"
+            app:layout_constraintTop_toTopOf="@+id/emploandetails_tenure" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_overdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overdue"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_tenure"
+            app:layout_constraintTop_toBottomOf="@+id/emploandetails_tenure" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_overdueamt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2000 "
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/emploandetails_overdue"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_airtel"
+            app:layout_constraintTop_toTopOf="@+id/emploandetails_overdue" />
+
+
+
+        <TextView
+            android:id="@+id/emploandetails_emiamt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emi_amount"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_overdue"
+            app:layout_constraintTop_toBottomOf="@+id/emploandetails_overdue" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_emiamtrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5100 "
+            android:textSize="16sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/emploandetails_emiamt"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_airtel"
+            app:layout_constraintTop_toTopOf="@+id/emploandetails_emiamt" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_emischdul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="@string/emi_schdule"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="#0057FF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/emploandetails_emiamtrs"
+            app:layout_constraintStart_toEndOf="@+id/emploandetails_emiamtrs"
+            app:layout_constraintTop_toTopOf="@+id/emploandetails_emiamtrs" />
+
+        <View
+            android:layout_width="78dp"
+            android:layout_height="1dp"
+            android:background="#0057FF"
+            app:layout_constraintEnd_toEndOf="@+id/emploandetails_emischdul"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_emischdul"
+            app:layout_constraintTop_toBottomOf="@+id/emploandetails_emischdul" />
+
+
+
+        <TextView
+            android:id="@+id/emploandetails_totalrepay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_repayment"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_emiamt"
+            app:layout_constraintTop_toBottomOf="@+id/emploandetails_emiamt" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_totalrepayamt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5100 "
+            android:textSize="16sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/emploandetails_totalrepay"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_airtel"
+            app:layout_constraintTop_toTopOf="@+id/emploandetails_totalrepay" />
+
+
+
+        <TextView
+            android:id="@+id/emploandetails_nextrepay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_repayment_date"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_totalrepay"
+            app:layout_constraintTop_toBottomOf="@+id/emploandetails_totalrepay" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_nextrepaydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19/07/22 "
+            android:textSize="16sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/emploandetails_nextrepay"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_airtel"
+            app:layout_constraintTop_toTopOf="@+id/emploandetails_nextrepay" />
+
+
+
+
+        <TextView
+            android:id="@+id/emploandetails_repaymode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repayment_mode"
+            android:textSize="16sp"
+            android:textColor="@color/normal_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_nextrepay"
+            app:layout_constraintTop_toBottomOf="@+id/emploandetails_nextrepay" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_repaymodeauto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Debit"
+            android:textSize="16sp"
+            android:textColor="@color/app_black"
+            android:fontFamily="@font/nunito_sans_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/emploandetails_repaymode"
+            app:layout_constraintStart_toStartOf="@+id/loandetails_airtel"
+            app:layout_constraintTop_toTopOf="@+id/emploandetails_repaymode" />
+
+
+        <TextView
+            android:id="@+id/emploandetails_payemi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="@string/pay_emi"
+            android:textColor="#0057FF"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_repaymode"
+            app:layout_constraintTop_toBottomOf="@+id/emploandetails_repaymode" />
+
+        <View
+            android:layout_width="55dp"
+            android:layout_height="1dp"
+            android:background="#0057FF"
+            app:layout_constraintEnd_toEndOf="@+id/emploandetails_payemi"
+            app:layout_constraintStart_toStartOf="@+id/emploandetails_payemi"
+            app:layout_constraintTop_toBottomOf="@+id/emploandetails_payemi" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/emploandetails_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/drawable_details"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:text="@string/pay"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/_180sdp"
+        app:layout_constraintTop_toBottomOf="@+id/emploandetails_cons2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
