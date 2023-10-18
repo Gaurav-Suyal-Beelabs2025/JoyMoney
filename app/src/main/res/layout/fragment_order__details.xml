@@ -209,6 +209,8 @@
 
            </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+
               <androidx.constraintlayout.widget.ConstraintLayout
                   android:id="@+id/layout_Drop"
                   android:layout_width="wrap_content"
@@ -502,7 +504,7 @@
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="@string/_35"
-             android:textColor="@color/black"
+             android:textColor="#262626"
              app:layout_constraintBottom_toBottomOf="@id/base_charge_txt"
              app:layout_constraintTop_toTopOf="@id/base_charge_txt"
              app:layout_constraintEnd_toEndOf="@id/img_upper"
@@ -525,7 +527,7 @@
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="@string/_35"
-             android:textColor="@color/black"
+             android:textColor="#262626"
              app:layout_constraintBottom_toBottomOf="@id/per_km__charge_txt"
              app:layout_constraintTop_toTopOf="@id/per_km__charge_txt"
              app:layout_constraintEnd_toEndOf="@id/img_upper"
@@ -552,7 +554,7 @@
              android:layout_height="wrap_content"
              android:text="@string/_70"
              android:fontFamily="@font/inter_semibold"
-             android:textColor="@color/black"
+             android:textColor="#262626"
              android:textFontWeight="600"
              app:layout_constraintBottom_toBottomOf="@id/delivery_charge_txt"
              app:layout_constraintTop_toTopOf="@id/delivery_charge_txt"
@@ -609,7 +611,7 @@
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="@string/na"
-             android:textColor="@color/black"
+             android:textColor="#262626"
              app:layout_constraintBottom_toBottomOf="@id/total_amount_txt"
              app:layout_constraintTop_toTopOf="@id/total_amount_txt"
              app:layout_constraintTop_toBottomOf="@id/total_amount_txt"
@@ -631,7 +633,7 @@
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="@string/na"
-             android:textColor="@color/black"
+             android:textColor="#262626"
              app:layout_constraintBottom_toBottomOf="@id/mode_txt"
              app:layout_constraintTop_toTopOf="@id/mode_txt"
              app:layout_constraintTop_toBottomOf="@id/mode_txt"
