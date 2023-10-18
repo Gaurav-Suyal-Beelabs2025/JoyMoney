@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Order_Delivered_Fragment">
+
+
+
+
+    <ImageView
+        android:id="@+id/ic_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancle_button"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottomsheet"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/delivered_buttomsheet"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/txt_delivered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivered"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textFontWeight="700"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_bold"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_17sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+          <TextView
+              android:id="@+id/txt_hndovr_id"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="#3984984GH8"
+              android:textColor="#686868"
+              android:textAllCaps="false"
+              android:textFontWeight="400"
+              android:textSize="14sp"
+              android:fontFamily="@font/inter_regular"
+              android:layout_marginEnd="@dimen/_12sdp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="@id/txt_delivered"/>
+
+        <TextView
+            android:id="@+id/txt_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textFontWeight="400"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="@string/order_id"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginEnd="@dimen/_2sdp"
+            app:layout_constraintEnd_toStartOf="@id/txt_hndovr_id"
+            app:layout_constraintTop_toTopOf="@id/txt_hndovr_id"/>
+
+        <ImageView
+            android:id="@+id/ic_man"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:src="@drawable/ellipse_6"
+            android:layout_marginTop="@dimen/_13sdp"
+            app:layout_constraintTop_toBottomOf="@id/txt_delivered"
+            app:layout_constraintStart_toStartOf="@id/txt_delivered"/>
+
+          <TextView
+              android:id="@+id/txt_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Rakesh Kumar |"
+              android:textAllCaps="false"
+              android:textColor="@color/black"
+              android:textSize="16sp"
+              android:textFontWeight="400"
+              android:fontFamily="@font/inter_semibold"
+              android:layout_marginTop="@dimen/_7sdp"
+              android:layout_marginStart="@dimen/_11sdp"
+              app:layout_constraintStart_toEndOf="@id/ic_man"
+              app:layout_constraintTop_toTopOf="@id/ic_man"/>
+
+           <ImageView
+               android:id="@+id/ic_star"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/star_yellow"
+               android:layout_marginStart="@dimen/_4sdp"
+               app:layout_constraintTop_toTopOf="@id/txt_name"
+               app:layout_constraintStart_toEndOf="@id/txt_name"
+               app:layout_constraintBottom_toBottomOf="@id/txt_name"/>
+
+            <TextView
+                android:id="@+id/txt_rating_4.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_0"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                android:textColor="#262626"
+                android:textAllCaps="false"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:fontFamily="@font/inter_regular"
+                app:layout_constraintTop_toTopOf="@id/ic_star"
+                app:layout_constraintStart_toEndOf="@id/ic_star"
+                app:layout_constraintBottom_toBottomOf="@id/ic_star"/>
+
+           <TextView
+               android:id="@+id/txt_delivered_in"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAllCaps="false"
+               android:text="@string/delivered_in"
+               android:textColor="#686868"
+               android:textSize="14sp"
+               android:textFontWeight="400"
+               android:fontFamily="@font/inter_regular"
+               android:layout_marginTop="@dimen/_5sdp"
+               app:layout_constraintTop_toBottomOf="@id/txt_name"
+               app:layout_constraintStart_toStartOf="@id/txt_name"/>
+
+             <TextView
+                 android:id="@+id/txt_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/_34_mins"
+                 android:textFontWeight="600"
+                 android:textSize="14sp"
+                 android:textColor="#0F6FB5"
+                 android:textAllCaps="false"
+                 android:fontFamily="@font/inter_semibold"
+                 android:layout_marginStart="@dimen/_4sdp"
+                 app:layout_constraintTop_toTopOf="@+id/txt_delivered_in"
+                 app:layout_constraintStart_toEndOf="@id/txt_delivered_in"/>
+
+        <ImageView
+            android:id="@+id/ic_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call"
+            app:layout_constraintBottom_toBottomOf="@id/txt_delivered_in"
+            app:layout_constraintEnd_toEndOf="@+id/txt_hndovr_id"
+            app:layout_constraintTop_toTopOf="@id/txt_name" />
+
+         <View
+             android:id="@+id/view1"
+             android:layout_width="0dp"
+             android:layout_height="1dp"
+             android:background="#EAEBEE"
+             android:layout_marginTop="@dimen/_21sdp"
+             app:layout_constraintStart_toStartOf="@id/ic_man"
+             app:layout_constraintEnd_toEndOf="@id/ic_call"
+             app:layout_constraintTop_toBottomOf="@id/txt_delivered_in"/>
+
+          <TextView
+              android:id="@+id/txt_rate_your_delivery"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAllCaps="false"
+              android:text="@string/rate_your_delivery"
+              android:textColor="#262626"
+              android:textSize="20sp"
+              android:textFontWeight="700"
+              android:fontFamily="@font/inter_bold"
+              android:layout_marginTop="@dimen/_15sdp"
+              app:layout_constraintTop_toBottomOf="@id/view1"
+              app:layout_constraintStart_toStartOf="@id/ic_man"/>
+
+           <RatingBar
+               android:id="@+id/ratinbar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:progressTint="#F8C64B"
+               android:layout_marginTop="@dimen/_10sdp"
+               app:layout_constraintTop_toBottomOf="@id/txt_rate_your_delivery"
+               app:layout_constraintStart_toStartOf="@id/txt_rate_your_delivery"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#EAEBEE"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@id/ic_man"
+            app:layout_constraintEnd_toEndOf="@id/ic_call"
+            app:layout_constraintTop_toBottomOf="@id/ratinbar"/>
+
+
+        <TextView
+            android:id="@+id/txt_hanks_for_choosing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thanks_for_choosing_handover"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            android:textColor="#262626"
+            android:textAllCaps="false"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/view2"
+            app:layout_constraintStart_toStartOf="@id/view2"/>
+
+          <LinearLayout
+              android:id="@+id/layout_order_details"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="@dimen/_8sdp"
+              app:layout_constraintStart_toStartOf="@id/txt_hanks_for_choosing"
+              app:layout_constraintTop_toBottomOf="@id/txt_hanks_for_choosing">
+
+        <TextView
+            android:id="@+id/txt_order_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/order_details"
+            android:textColor="#F0592A"
+            android:textSize="16sp"
+            android:textFontWeight="600"
+            android:fontFamily="@font/inter_semibold"/>
+
+
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_arrow_orange"
+               android:layout_marginStart="@dimen/_5sdp"
+               android:layout_gravity="center"/>
+
+          </LinearLayout>
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/img_right"
+              app:layout_constraintTop_toTopOf="@id/txt_hanks_for_choosing"
+              app:layout_constraintBottom_toBottomOf="@id/layout_order_details"
+              app:layout_constraintEnd_toEndOf="@id/ic_call"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FA713F"
+            android:background="@drawable/button_bacground"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:text="@string/add_comments"
+            android:fontFamily="@font/inter_bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_22sdp"
+            app:layout_constraintTop_toBottomOf="@id/layout_order_details"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Rent_AgreementFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowback_j"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txt_bank_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/bank_details"
+            android:textSize="24sp"
+            android:visibility="gone"
+            android:textColor="@color/medium_black"
+            android:fontFamily="@font/zilla_slab_bold"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="@id/ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="@id/ic_arrow_back"
+            app:layout_constraintStart_toEndOf="@id/ic_arrow_back"/>
+
+        <ImageView
+            android:id="@+id/ic_more_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_22sdp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_bank_details"
+            app:layout_constraintTop_toTopOf="@id/txt_bank_details"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+         <androidx.core.widget.NestedScrollView
+             app:layout_constraintTop_toBottomOf="@id/layout_include"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <androidx.constraintlayout.widget.ConstraintLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+
+
+
+       <TextView
+           android:id="@+id/txt_Rent_agreement"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/rent_agreement"
+           android:textAllCaps="false"
+           android:textColor="@color/medium_black"
+           android:textSize="32sp"
+           android:textFontWeight="700"
+           android:layout_marginTop="@dimen/_8sdp"
+           android:fontFamily="@font/zilla_slab_bold"
+           android:layout_marginStart="@dimen/_15sdp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_upload_rent_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_rent_agreement"
+            android:textSize="18sp"
+            android:textColor="@color/medium_black"
+            android:textFontWeight="700"
+            android:textAllCaps="false"
+            android:fontFamily="@font/zilla_slab_bold"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="@id/txt_Rent_agreement"
+            app:layout_constraintTop_toBottomOf="@id/txt_Rent_agreement"/>
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/layout_upload"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_15sdp"
+          android:layout_marginHorizontal="@dimen/_15sdp"
+          android:background="@drawable/dotted_border_box"
+          app:layout_constraintTop_toBottomOf="@id/txt_upload_rent_agreement">
+
+           <ImageView
+               android:id="@+id/ic_upload"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_upload"
+               android:layout_marginTop="@dimen/_15sdp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/nunito_sans_semibold"
+              android:text="@string/upload_rent_agreement"
+              android:textAllCaps="false"
+              android:textColor="#686868"
+              android:textFontWeight="600"
+              android:textSize="16sp"
+              android:layout_marginTop="@dimen/_8sdp"
+              android:layout_marginBottom="@dimen/_15sdp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="@+id/ic_upload"
+              app:layout_constraintStart_toStartOf="@+id/ic_upload"
+              app:layout_constraintTop_toBottomOf="@id/ic_upload" />
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_19sdp"
+                app:layout_constraintTop_toBottomOf="@+id/layout_upload">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/_100sdp"
+                   android:layout_weight="1"
+                   android:background="@drawable/cancle_photo"
+                    >
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_cancle"
+                       android:layout_marginTop="@dimen/_8sdp"
+                       android:layout_marginEnd="@dimen/_10sdp"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"/>
+
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/cancle_photo"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cancle"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/cancle_photo"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cancle"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+
+         <LinearLayout
+             android:id="@+id/layout_add_photo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="@dimen/_10sdp"
+             android:layout_marginHorizontal="@dimen/_15sdp"
+             app:layout_constraintTop_toBottomOf="@id/layout_cancle">
+
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_add"
+                 android:layout_gravity="center"
+                 android:layout_weight="1"
+                 android:paddingVertical="@dimen/_35sdp"
+                 android:backgroundTint="#EBEBEB"
+                 android:background="@drawable/cancle_photo"/>
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_add"
+                 android:backgroundTint="#EBEBEB"
+                 android:background="@drawable/cancle_photo"
+                 android:layout_marginStart="@dimen/_10sdp"
+                 android:paddingVertical="@dimen/_35sdp"
+                 android:layout_gravity="center"
+                 android:layout_weight="1"/>
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_add"
+                 android:backgroundTint="#EBEBEB"
+                 android:background="@drawable/cancle_photo"
+                 android:layout_marginStart="@dimen/_10sdp"
+                 android:paddingVertical="@dimen/_35sdp"
+                 android:layout_gravity="center"
+                 android:layout_weight="1"/>
+
+
+         </LinearLayout>
+
+
+      <TextView
+          android:id="@+id/txt_add_more"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textFontWeight="600"
+          android:background="@drawable/button_bacground"
+          android:backgroundTint="@color/white"
+          android:text="@string/add_more"
+          android:textColor="#0AA95F"
+          android:textAllCaps="false"
+          android:textSize="16sp"
+          android:paddingVertical="@dimen/_8sdp"
+          android:paddingHorizontal="@dimen/_20sdp"
+          android:layout_marginTop="@dimen/_27sdp"
+          app:layout_constraintStart_toStartOf="@id/layout_add_photo"
+          app:layout_constraintEnd_toEndOf="@id/layout_add_photo"
+          app:layout_constraintTop_toBottomOf="@id/layout_add_photo"
+          android:fontFamily="@font/nunito_sans_semibold"/>
+
+
+       <TextView
+           android:id="@+id/txt_details"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="18sp"
+           android:textAllCaps="false"
+           android:textColor="@color/medium_black"
+           android:text="@string/details"
+           android:textFontWeight="700"
+           android:layout_marginTop="@dimen/_30sdp"
+           android:fontFamily="@font/nunito_sans_bold"
+           app:layout_constraintStart_toStartOf="@id/txt_Rent_agreement"
+           app:layout_constraintTop_toBottomOf="@id/txt_add_more"/>
+
+
+        <TextView
+            android:id="@+id/txt_rent_aggrement_should"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rent_aggrement_should_be_6_months_old"
+            android:textAllCaps="false"
+            android:textFontWeight="400"
+            android:textColor="#004DC0"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@id/txt_details"
+            app:layout_constraintTop_toBottomOf="@id/txt_details"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bacground"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="@string/submit"
+        android:fontFamily="@font/nunito_sans_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_70sdp"
+        app:layout_constraintTop_toBottomOf="@id/txt_rent_aggrement_should"/>
+
+
+             </androidx.constraintlayout.widget.ConstraintLayout>
+
+         </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

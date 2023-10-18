@@ -1,6 +1,107 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">My New App</string>
     <string name="apply_coupon">Apply Coupon</string>
     <string name="apply">Apply</string>
     <string name="available_coupons">Available Coupons</string>
+=======
+    <string name="app_name">Joy Money</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="joy_money">Joy Money</string>
+    <string name="by_continuing_i_agree_to_joymoney_s_t_cs_and_privacy_policy"><font color="#000000">By continuing, I agree to Joymoney’s</font><font color="#004DC0"> T&amp;Cs</font><font color="#000000"> and</font><font color="#004DC0">\nPrivacy Policy</font></string>
+    <string name="allow_amp_continue"><![CDATA[Allow & Continue]]></string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="please_make_sure_this_sim_is_present_in_this_ndevice">Please make sure this SIM is present in this \ndevice</string>
+    <string name="allow_whatsapp_notification">Allow Whatsapp notification</string>
+    <string name="enter_your_pan">Enter Your PAN</string>
+    <string name="pan_verification">PAN Verification</string>
+    <string name="i_authorize_joymoney_to_verify_my_pan_details_from_the_authority">I authorize Joymoney to verify my PAN details from the authority</string>
+    <string name="i_authorize_joymoney_to_check_my_credit_score_from_the_credit_buerue">I authorize Joymoney to check my credit score from the credit buerue</string>
+    <string name="powered_by">Powered by</string>
+    <string name="enter_aadhar_number">Enter Aadhar Number</string>
+    <string name="aadhaar_verification">Aadhaar Verification</string>
+    <string name="same_as_linked_to_my_aadhaar">Same as linked to my Aadhaar</string>
+    <string name="we_don_t_save_your_aadhaar_number">We don’t save your Aadhaar number.</string>
+    <string name="enter_captcha">Enter Captcha</string>
+    <string name="i_authorize_joymoney_to_verify_and_fetch_my_aadhaar_details_from_uidai">I authorize Joymoney to verify and fetch my aadhaar details from UIDAI</string>
+    <string name="submit">Submit</string>
+    <string name="upload_selfie">Upload Selfie</string>
+    <string name="we_would_like_to_see_you">We would like to see you!</string>
+    <string name="business_details">Business Details</string>
+    <string name="enter_your_work_details">Enter Your Work Details</string>
+    <string name="office_email_id">Office email id</string>
+    <string name="send_verification_link">Send verification link</string>
+    <string name="company_name">Company Name</string>
+    <string name="company_website">Company Website</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="this_bank_account_will_be_used_to_transfer_the_amount">This bank account will be used to transfer the amount</string>
+    <string name="bank_account_number">Bank account number</string>
+    <string name="ifsc">IFSC</string>
+    <string name="branch">Branch</string>
+    <string name="verify">Verify</string>
+    <string name="work_details">Work Details</string>
+    <string name="company_address">Company address</string>
+    <string name="company_contact_number">Company contact number</string>
+    <string name="rent_agreement">Rent Agreement</string>
+    <string name="upload_rent_agreement">Upload Rent Agreement</string>
+    <string name="add_more">+ Add More</string>
+    <string name="details">Details</string>
+    <string name="rent_aggrement_should_be_6_months_old">Rent aggrement should be 6 months old</string>
+    <string name="residence_details">Residence Details</string>
+    <string name="current">Current</string>
+    <string name="select_property_ownership">Select Property Ownership</string>
+    <string name="upload_any_utility_bill_of_your_current_residence_address">Upload any utility bill of your current residence \naddress</string>
+    <string name="select_bill_type_from_the_below_list">Select bill type from the below list</string>
+    <string name="upload_utility_bill">Upload Utility Bill</string>
+    <string name="delivered">Delivered</string>
+    <string name="order_id">Order ID :</string>
+    <string name="_4_0">4.0</string>
+    <string name="delivered_in">Delivered in</string>
+    <string name="_34_mins">34 mins</string>
+    <string name="rate_your_delivery">Rate your delivery</string>
+    <string name="thanks_for_choosing_handover">Thanks for choosing Handover.</string>
+    <string name="order_details">Order Details</string>
+    <string name="add_comments">Add Comments</string>
+    <string name="two_wheeler_delivery">Two Wheeler Delivery</string>
+    <string name="take_10_15_mins_to_arrive">Take 10-15 mins to arrive!</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="rajeev_chauk_new_delhi_connaught_place_delhi_110091">Rajeev chauk new delhi, connaught place delhi-110091</string>
+    <string name="drop">Drop</string>
+    <string name="distance">Distance</string>
+    <string name="_12_48_kms">12.48 kms</string>
+    <string name="delivery_item">Delivery Item</string>
+    <string name="food">Food</string>
+    <string name="pickup_date_amp_time"><![CDATA[Pickup Date & Time]]></string>
+    <string name="_01_02_2033_12_11_pm">01/02/2033 12:11 PM</string>
+    <string name="delivery_date_amp_time"><![CDATA[Delivery Date & Time]]></string>
+    <string name="item_weight">Item Weight</string>
+    <string name="_2_kgs">2 Kgs</string>
+    <string name="charges_details">Charges Details</string>
+    <string name="reorder">Reorder</string>
+    <string name="na">NA</string>
+    <string name="mode">Mode</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="customer_collection">Customer Collection</string>
+    <string name="_70">₹70</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="_35">₹35</string>
+    <string name="per_kms_charges_after_2kms">Per kms Charges (after 2kms)</string>
+    <string name="base_charges_for_2kms">Base Charges (for 2kms)</string>
+
+    <string-array name="spiner">
+
+        <item>Self Owned</item>
+        <item>Rajeev</item>
+        <item>saurabh</item>
+        <item>reeta</item>
+        <item>pancham</item>
+        <item>deepak</item>
+        <item>utsav</item>
+
+
+    </string-array>
+
+>>>>>>> cd46877a4370bd04fe1dcbc7bf39d3d352cc6cf3
 </resources>

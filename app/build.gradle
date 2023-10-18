@@ -7,7 +7,11 @@ android {
     compileSdk 32
 
     defaultConfig {
+<<<<<<< HEAD
         applicationId "com.example.mynewapp"
+=======
+        applicationId "com.example.joymoney"
+>>>>>>> cd46877a4370bd04fe1dcbc7bf39d3d352cc6cf3
         minSdk 21
         targetSdk 32
         versionCode 1
@@ -32,7 +36,11 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
     implementation 'com.intuit.sdp:sdp-android:1.0.5'
+=======
+
+>>>>>>> cd46877a4370bd04fe1dcbc7bf39d3d352cc6cf3
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.9.0'
@@ -40,4 +48,24 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+<<<<<<< HEAD
+=======
+
+
+    //sdp
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //nav graph dependency
+    def nav_version = "2.5.0"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+//    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.5.0'
+
+    // camera
+    implementation "androidx.camera:camera-camera2:1.1.0"
+
+
+
+>>>>>>> cd46877a4370bd04fe1dcbc7bf39d3d352cc6cf3
 }

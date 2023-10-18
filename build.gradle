@@ -2,7 +2,11 @@
 plugins {
     id 'com.android.application' version '7.2.0' apply false
     id 'com.android.library' version '7.2.0' apply false
+<<<<<<< HEAD
     id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
+=======
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+>>>>>>> cd46877a4370bd04fe1dcbc7bf39d3d352cc6cf3
 }
 
 task clean(type: Delete) {

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AllowPermission_Fragment">
+
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         app:layout_constraintTop_toTopOf="parent">
+
+
+
+     <ImageView
+         android:id="@+id/ic_logo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/joymoney_logo"
+         android:layout_marginTop="@dimen/_50sdp"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent"/>
+
+          <TextView
+              android:id="@+id/txt_joymoney"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/joy_money"
+              android:textSize="48sp"
+              android:textColor="#012928"
+              android:textAllCaps="false"
+              android:fontFamily="@font/zilla_slab_semibold"
+              app:layout_constraintStart_toStartOf="@id/ic_logo"
+              app:layout_constraintEnd_toEndOf="@id/ic_logo"
+              app:layout_constraintTop_toBottomOf="@id/ic_logo"/>
+
+              <CheckBox
+                  android:id="@+id/checkbox"
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:layout_marginStart="@dimen/_15sdp"
+                  android:layout_marginTop="@dimen/_180sdp"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/txt_joymoney"/>
+
+
+             <TextView
+                 android:id="@+id/txt_sms_phone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="SMS &amp; Phone Permission"
+                 android:textAllCaps="false"
+                 android:textColor="@color/black"
+                 android:textSize="18sp"
+                 android:fontFamily="@font/zilla_slab_semibold"
+                 android:layout_marginStart="@dimen/_8sdp"
+                 app:layout_constraintStart_toEndOf="@id/checkbox"
+                 app:layout_constraintTop_toTopOf="@id/checkbox"/>
+
+           <TextView
+               android:id="@+id/txt_wesend_sms"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="We send SMS and read to verify your mobile and track your networth"
+               android:textAllCaps="false"
+               android:textSize="16sp"
+               android:textColor="#707070"
+               android:fontFamily="@font/nunito_sans_regular"
+               app:layout_constraintEnd_toEndOf="parent"
+               android:layout_marginEnd="@dimen/_14sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               app:layout_constraintTop_toBottomOf="@id/txt_sms_phone"
+               app:layout_constraintStart_toStartOf="@id/txt_sms_phone"/>
+
+
+            <TextView
+                android:id="@+id/txt_by_continuing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/by_continuing_i_agree_to_joymoney_s_t_cs_and_privacy_policy"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_75sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_wesend_sms"
+                app:layout_constraintStart_toStartOf="@id/checkbox"/>
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/button_bacground"
+              android:textColor="@color/white"
+              android:textSize="18sp"
+              android:textAllCaps="false"
+              android:gravity="center"
+              android:paddingVertical="@dimen/_12sdp"
+              android:layout_marginTop="@dimen/_12sdp"
+              android:layout_marginHorizontal="@dimen/_15sdp"
+              android:text="@string/allow_amp_continue"
+              android:fontFamily="@font/nunito_sans_bold"
+              app:layout_constraintTop_toBottomOf="@id/txt_by_continuing"/>
+
+
+
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+<<<<<<< HEAD
         <item>@font/inter</item>
         <item>@font/inter_bold</item>
         <item>@font/inter_medium</item>
         <item>@font/inter_semibold</item>
+=======
+        <item>@font/nunito_sans_bold</item>
+        <item>@font/nunito_sans_regular</item>
+        <item>@font/nunito_sans_semibold</item>
+        <item>@font/zilla_slab_bold</item>
+        <item>@font/zilla_slab_medium</item>
+        <item>@font/zilla_slab_regular</item>
+        <item>@font/zilla_slab_semibold</item>
+>>>>>>> cd46877a4370bd04fe1dcbc7bf39d3d352cc6cf3
     </array>
 </resources>
