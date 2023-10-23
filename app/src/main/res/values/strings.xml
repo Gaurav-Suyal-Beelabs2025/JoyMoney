@@ -83,6 +83,22 @@
     <string name="_35">₹35</string>
     <string name="per_kms_charges_after_2kms">Per kms Charges (after 2kms)</string>
     <string name="base_charges_for_2kms">Base Charges (for 2kms)</string>
+    <string name="order_no">Order No.</string>
+    <string name="_2341">2341</string>
+    <string name="_01_oct_2033">01 Oct, 2033</string>
+    <string name="_12_11_pm">12:11 PM</string>
+    <string name="two_wheeler_ndelivery">Two Wheeler \nDelivery</string>
+    <string name="receiver_s_no">Receiver’s No.</string>
+    <string name="_8800908987">8800908987</string>
+    <string name="delivery_partner_s_no">Delivery Partner’s No.</string>
+    <string name="raise_ticket">Raise Ticket</string>
+    <string name="get_invoice">Get Invoice</string>
+    <string name="track">Track</string>
+    <string name="driver_related">Driver Related</string>
+    <string name="payment_related">Payment Related</string>
+    <string name="item_related">Item Related</string>
+    <string name="delivery_related">Delivery Related</string>
+    <string name="toll_charges_related">Toll Charges Related</string>
 
     <string-array name="spiner">
 

@@ -44,6 +44,9 @@
         <action
             android:id="@+id/action_home_Fragment_to_order_DetailsFragment"
             app:destination="@id/order_DetailsFragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_raise_TicketFragment"
+            app:destination="@id/raise_TicketFragment" />
     </fragment>
 
     <fragment
@@ -116,4 +119,9 @@
         android:name="com.example.joymoney.Order_DetailsFragment"
         android:label="fragment_order__details"
         tools:layout="@layout/fragment_order__details" />
+    <fragment
+        android:id="@+id/raise_TicketFragment"
+        android:name="com.example.joymoney.Raise_TicketFragment"
+        android:label="fragment_raise__ticket"
+        tools:layout="@layout/fragment_raise__ticket" />
 </navigation>

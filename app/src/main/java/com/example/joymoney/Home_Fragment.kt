@@ -33,7 +33,7 @@ class Home_Fragment : Fragment() {
     val Residence_Details =view.findViewById<TextView>(R.id.button_Residence_Details)
     val add_comments=view.findViewById<TextView>(R.id.buttom_add_comments)
     val Reorder =view.findViewById<TextView>(R.id.buttom_Reorder)
-
+    val raise_ticket =view.findViewById<TextView>(R.id.buttom_raise_ticket)
          upload_selfie.setOnClickListener {
 
         Navigation.findNavController(view).navigate(R.id.uploadSelfie_Fragment)
@@ -112,6 +112,11 @@ class Home_Fragment : Fragment() {
             Navigation.findNavController(view).navigate(R.id.order_DetailsFragment)
 
 
+        }
+
+        raise_ticket.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.raise_TicketFragment)
         }
 
 

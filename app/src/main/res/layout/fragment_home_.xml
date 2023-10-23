@@ -227,9 +227,28 @@
                 android:layout_marginHorizontal="@dimen/_15sdp"
                 android:text="Reorder"
                 android:fontFamily="@font/inter_bold"
+                app:layout_constraintTop_toBottomOf="@id/buttom_add_comments"/>
+
+
+
+            <TextView
+                android:id="@+id/buttom_raise_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FA713F"
+                android:background="@drawable/button_bacground"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:text="@string/raise_ticket"
+                android:fontFamily="@font/inter_bold"
                 android:layout_marginBottom="@dimen/_80sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/buttom_add_comments"/>
+                app:layout_constraintTop_toBottomOf="@id/buttom_Reorder"/>
 
 
 
