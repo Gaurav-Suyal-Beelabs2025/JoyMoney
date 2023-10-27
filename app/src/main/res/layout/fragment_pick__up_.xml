@@ -159,13 +159,45 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_pickup"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             tools:listitem="@layout/itam_list"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/layout_add_new_address"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintTop_toBottomOf="@id/txt_previously_saved"/>
 
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_add_new_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+           <TextView
+               android:id="@+id/txt_add_new_address"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/add_new_address"
+               android:textColor="#0F6FB5"
+               android:textAllCaps="false"
+               android:textFontWeight="500"
+               android:textSize="16sp"
+               android:gravity="center"
+               android:paddingVertical="@dimen/_10sdp"
+               android:layout_marginVertical="@dimen/_10sdp"
+               android:layout_marginHorizontal="@dimen/_15sdp"
+               android:fontFamily="@font/inter_medium"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               android:background="@drawable/default_pickup_drawable"
+               />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
