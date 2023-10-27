@@ -116,7 +116,7 @@ class Home_Fragment : Fragment() {
 
         raise_ticket.setOnClickListener {
 
-            Navigation.findNavController(view).navigate(R.id.raise_TicketFragment)
+            Navigation.findNavController(view).navigate(R.id.pick_Up_Fragment)
         }
 
 

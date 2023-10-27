@@ -6,6 +6,7 @@
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/drawable-v24/dotted_border_box.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/drawable/button_bacground.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/drawable/cancle_photo.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/drawable/default_pickup_drawable.xml" value="0.203" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/drawable/delivered_buttomsheet.xml" value="0.2195" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/drawable/delivered_drawable.xml" value="0.203" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/drawable/distance_drawable.xml" value="0.203" />
@@ -33,6 +34,7 @@
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_order__delivered_.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_order__details.xml" value="0.264" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_pan_verification_.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_pick__up_.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_profile_.xml" value="0.2359375" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_raise__ticket.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_rent__agreement.xml" value="0.25" />
@@ -41,6 +43,7 @@
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_transation_ragment.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_upload_selfie_.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/fragment_work__details.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/itam_list.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/layout/residence_detailsdetails.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/JoyMoney/app/src/main/res/menu/menu.xml" value="0.24895833333333334" />
       </map>

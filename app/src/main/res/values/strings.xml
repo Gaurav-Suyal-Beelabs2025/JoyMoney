@@ -99,6 +99,13 @@
     <string name="item_related">Item Related</string>
     <string name="delivery_related">Delivery Related</string>
     <string name="toll_charges_related">Toll Charges Related</string>
+    <string name="default_pick_up">Default Pick Up</string>
+    <string name="sd_138b_ahinsa_khand_1_jaipuria_service_road_indirapuram_ghaziabad">SD-138B, Ahinsa Khand 1, Jaipuria Service Road, Indirapuram, Ghaziabad</string>
+    <string name="previously_saved_addresses">Previously Saved Addresses</string>
+    <string name="temporary_home">Temporary Home</string>
+    <string name="edit">Edit</string>
+    <string name="select">Select</string>
+    <string name="j_121_second_floor_block_j_rajouri_garden_new_delhi">J-121, Second Floor, Block J, Rajouri Garden,New Delhi</string>
 
     <string-array name="spiner">
 

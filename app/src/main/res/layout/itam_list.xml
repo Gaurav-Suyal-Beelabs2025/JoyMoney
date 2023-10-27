@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+     <TextView
+         android:id="@+id/txt_temporary_home"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/temporary_home"
+         android:textColor="@color/black"
+         android:textAllCaps="false"
+         android:textFontWeight="400"
+         android:textSize="14sp"
+         android:fontFamily="@font/inter_regular"
+         android:layout_marginStart="@dimen/_15sdp"
+         android:layout_marginTop="@dimen/_10sdp"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textFontWeight="500"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="@string/edit"
+            android:background="@drawable/button_bacground"
+            android:backgroundTint="#FA713F"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:paddingHorizontal="@dimen/_9sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            app:layout_constraintStart_toEndOf="@id/txt_temporary_home"
+            app:layout_constraintTop_toTopOf="@id/txt_temporary_home"/>
+
+
+        <LinearLayout
+
+            android:id="@+id/layout_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintTop_toTopOf="@id/txt_address_second_floor"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select"
+                android:textColor="#FA713F"
+                android:textAllCaps="false"
+                android:textFontWeight="500"
+                android:textSize="14sp"
+                android:fontFamily="@font/inter_medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:src="@drawable/arrow_forward_orange"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_address_second_floor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/j_121_second_floor_block_j_rajouri_garden_new_delhi"
+            android:textAllCaps="false"
+            android:textColor="#636363"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintEnd_toStartOf="@+id/layout_select"
+            app:layout_constraintStart_toStartOf="@id/txt_temporary_home"
+            app:layout_constraintTop_toBottomOf="@id/txt_temporary_home" />
+
+           <View
+               android:id="@+id/view"
+               android:layout_width="0dp"
+               android:layout_height="1dp"
+               android:background="#EEEEEE"
+               android:layout_marginTop="@dimen/_12sdp"
+               android:layout_marginBottom="@dimen/_10sdp"
+               app:layout_constraintTop_toBottomOf="@id/txt_address_second_floor"
+               app:layout_constraintStart_toStartOf="@id/txt_address_second_floor"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -61,6 +61,9 @@ class MainActivity : AppCompatActivity() {
             } else if (destination.id == R.id.raise_TicketFragment) {
                 bottomNavigationView.visibility = View.GONE
 
+            } else if (destination.id == R.id.pick_Up_Fragment) {
+                bottomNavigationView.visibility = View.GONE
+
 
 
 

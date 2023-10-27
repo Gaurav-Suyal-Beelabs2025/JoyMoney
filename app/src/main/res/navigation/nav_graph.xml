@@ -47,6 +47,9 @@
         <action
             android:id="@+id/action_home_Fragment_to_raise_TicketFragment"
             app:destination="@id/raise_TicketFragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_pick_Up_Fragment"
+            app:destination="@id/pick_Up_Fragment" />
     </fragment>
 
     <fragment
@@ -124,4 +127,9 @@
         android:name="com.example.joymoney.Raise_TicketFragment"
         android:label="fragment_raise__ticket"
         tools:layout="@layout/fragment_raise__ticket" />
+    <fragment
+        android:id="@+id/pick_Up_Fragment"
+        android:name="com.example.joymoney.Pick_Up_Fragment"
+        android:label="fragment_pick__up_"
+        tools:layout="@layout/fragment_pick__up_" />
 </navigation>
